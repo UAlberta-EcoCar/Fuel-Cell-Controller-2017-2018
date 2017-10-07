@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -217,6 +216,81 @@
 <connect gate="G$1" pin="LED2P" pad="P$12"/>
 <connect gate="G$1" pin="SHD1" pad="P$13"/>
 <connect gate="G$1" pin="SHD2" pad="P$14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="5555140-6 RJ11">
+<packages>
+<package name="1734723-1_RJ11">
+<wire x1="-8.8" y1="-14.48" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
+<wire x1="-8.8" y1="4.06" x2="-8.8" y2="-14.48" width="0.127" layer="21"/>
+<wire x1="7.53" y1="4.06" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
+<wire x1="-8.8" y1="4.06" x2="7.53" y2="4.06" width="0.127" layer="21"/>
+<pad name="1" x="-3.81" y="2.54" drill="1" shape="square"/>
+<pad name="2" x="-1.27" y="2.54" drill="1"/>
+<pad name="3" x="1.27" y="2.54" drill="1"/>
+<pad name="4" x="-2.54" y="0" drill="1"/>
+<pad name="5" x="0" y="0" drill="1"/>
+<pad name="6" x="2.54" y="0" drill="1"/>
+<pad name="SH1" x="-7.5" y="-9.4" drill="1.65"/>
+<pad name="SH2" x="6.22" y="-9.4" drill="1.65"/>
+<text x="-8.89" y="5.08" size="1.27" layer="21">&gt;name</text>
+<text x="-8.89" y="7.62" size="1.27" layer="21">&gt;value</text>
+<hole x="-5.72" y="-6.35" drill="3.3"/>
+<hole x="4.44" y="-6.35" drill="3.3"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1734723-1_RJ11">
+<wire x1="-2.54" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-25.4" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="15.24" x2="-2.54" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-22.86" x2="-2.54" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-22.86" x2="-7.62" y2="-22.86" width="0.254" layer="94"/>
+<pin name="1" x="-7.62" y="12.7" visible="pin" length="middle"/>
+<pin name="2" x="-7.62" y="7.62" visible="pin" length="middle"/>
+<pin name="3" x="-7.62" y="2.54" visible="pin" length="middle"/>
+<pin name="4" x="-7.62" y="-2.54" visible="pin" length="middle"/>
+<pin name="5" x="-7.62" y="-7.62" visible="pin" length="middle"/>
+<pin name="6" x="-7.62" y="-12.7" visible="pin" length="middle"/>
+<pin name="SH1" x="-7.62" y="-17.78" visible="pin" length="middle"/>
+<pin name="SH2" x="-7.62" y="-22.86" visible="pin" length="middle"/>
+<text x="-5.08" y="-27.94" size="1.778" layer="94">1734723-1 </text>
+<text x="-5.08" y="-30.48" size="1.27" layer="94">&gt;name</text>
+<text x="-5.08" y="-33.02" size="1.27" layer="94">&gt;value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5555140-6" prefix="E">
+<gates>
+<gate name="G$1" symbol="1734723-1_RJ11" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="1734723-1_RJ11">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="SH1" pad="SH1"/>
+<connect gate="G$1" pin="SH2" pad="SH2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -452,7 +526,7 @@
 <pin name="PE_15" x="71.12" y="-7.62" length="middle" rot="R180"/>
 <pin name="PB_10(SERIAL3_TX/I2C2_SCL/SPI2_SCLK/PWM2/3)" x="-71.12" y="-15.24" length="middle"/>
 <pin name="PB_11(SERIAL3_RX/I2C2_SDA/PWM2/4)" x="-71.12" y="-17.78" length="middle"/>
-<text x="-66.04" y="-71.12" size="1.778" layer="95">&gt;NAME</text>
+<text x="-66.04" y="-71.12" size="1.778" layer="95">NUCLEO-F746ZG</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -561,81 +635,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="5555140-6 RJ11">
-<packages>
-<package name="1734723-1_RJ11">
-<wire x1="-8.8" y1="-14.48" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
-<wire x1="-8.8" y1="4.06" x2="-8.8" y2="-14.48" width="0.127" layer="21"/>
-<wire x1="7.53" y1="4.06" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
-<wire x1="-8.8" y1="4.06" x2="7.53" y2="4.06" width="0.127" layer="21"/>
-<pad name="1" x="-3.81" y="2.54" drill="1" shape="square"/>
-<pad name="2" x="-1.27" y="2.54" drill="1"/>
-<pad name="3" x="1.27" y="2.54" drill="1"/>
-<pad name="4" x="-2.54" y="0" drill="1"/>
-<pad name="5" x="0" y="0" drill="1"/>
-<pad name="6" x="2.54" y="0" drill="1"/>
-<pad name="SH1" x="-7.5" y="-9.4" drill="1.65"/>
-<pad name="SH2" x="6.22" y="-9.4" drill="1.65"/>
-<text x="-8.89" y="5.08" size="1.27" layer="21">&gt;name</text>
-<text x="-8.89" y="7.62" size="1.27" layer="21">&gt;value</text>
-<hole x="-5.72" y="-6.35" drill="3.3"/>
-<hole x="4.44" y="-6.35" drill="3.3"/>
-</package>
-</packages>
-<symbols>
-<symbol name="1734723-1_RJ11">
-<wire x1="-2.54" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-25.4" x2="5.08" y2="15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="15.24" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="15.24" x2="-2.54" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-22.86" x2="-2.54" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-22.86" x2="-7.62" y2="-22.86" width="0.254" layer="94"/>
-<pin name="1" x="-7.62" y="12.7" visible="pin" length="middle"/>
-<pin name="2" x="-7.62" y="7.62" visible="pin" length="middle"/>
-<pin name="3" x="-7.62" y="2.54" visible="pin" length="middle"/>
-<pin name="4" x="-7.62" y="-2.54" visible="pin" length="middle"/>
-<pin name="5" x="-7.62" y="-7.62" visible="pin" length="middle"/>
-<pin name="6" x="-7.62" y="-12.7" visible="pin" length="middle"/>
-<pin name="SH1" x="-7.62" y="-17.78" visible="pin" length="middle"/>
-<pin name="SH2" x="-7.62" y="-22.86" visible="pin" length="middle"/>
-<text x="-5.08" y="-27.94" size="1.778" layer="94">1734723-1 </text>
-<text x="-5.08" y="-30.48" size="1.27" layer="94">&gt;name</text>
-<text x="-5.08" y="-33.02" size="1.27" layer="94">&gt;value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="5555140-6" prefix="E">
-<gates>
-<gate name="G$1" symbol="1734723-1_RJ11" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="1734723-1_RJ11">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="SH1" pad="SH1"/>
-<connect gate="G$1" pin="SH2" pad="SH2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -658,9 +657,9 @@
 <part name="ETH10" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="ETH11" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="ETH12" library="ETHERNET" deviceset="ETHERNET" device=""/>
-<part name="U$1" library="FCC_parts" deviceset="NUCLEO-F746ZG" device="NUCLEO-F746ZG"/>
 <part name="E1" library="5555140-6 RJ11" deviceset="5555140-6" device=""/>
 <part name="E2" library="5555140-6 RJ11" deviceset="5555140-6" device=""/>
+<part name="U$1" library="FCC_parts" deviceset="NUCLEO-F746ZG" device="NUCLEO-F746ZG"/>
 </parts>
 <sheets>
 <sheet>
@@ -1179,29 +1178,29 @@
 <net name="N$79" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="5"/>
-<wire x1="15.24" y1="-215.9" x2="2.54" y2="-215.9" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="-215.9" x2="2.54" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-215.9" x2="0" y2="-215.9" width="0.1524" layer="91"/>
+<wire x1="0" y1="-215.9" x2="0" y2="-203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$80" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="6"/>
-<wire x1="15.24" y1="-218.44" x2="5.08" y2="-218.44" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-218.44" x2="5.08" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-218.44" x2="-2.54" y2="-218.44" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-218.44" x2="-2.54" y2="-208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$81" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="7"/>
-<wire x1="15.24" y1="-220.98" x2="7.62" y2="-220.98" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-220.98" x2="7.62" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-220.98" x2="-5.08" y2="-220.98" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-220.98" x2="-5.08" y2="-213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$82" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="8"/>
-<wire x1="15.24" y1="-223.52" x2="10.16" y2="-223.52" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="-223.52" x2="10.16" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-223.52" x2="-7.62" y2="-223.52" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-223.52" x2="-7.62" y2="-218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$83" class="0">
@@ -1347,29 +1346,29 @@
 <net name="N$5" class="0">
 <segment>
 <pinref part="ETH12" gate="G$1" pin="5"/>
-<wire x1="15.24" y1="-304.8" x2="2.54" y2="-304.8" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="-304.8" x2="2.54" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-304.8" x2="0" y2="-304.8" width="0.1524" layer="91"/>
+<wire x1="0" y1="-304.8" x2="0" y2="-287.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="ETH12" gate="G$1" pin="6"/>
-<wire x1="15.24" y1="-307.34" x2="5.08" y2="-307.34" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-307.34" x2="5.08" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-307.34" x2="-2.54" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-307.34" x2="-2.54" y2="-287.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="ETH12" gate="G$1" pin="7"/>
-<wire x1="15.24" y1="-309.88" x2="7.62" y2="-309.88" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-309.88" x2="7.62" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-309.88" x2="-5.08" y2="-309.88" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-309.88" x2="-5.08" y2="-287.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="ETH12" gate="G$1" pin="8"/>
-<wire x1="15.24" y1="-312.42" x2="10.16" y2="-312.42" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="-312.42" x2="10.16" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-312.42" x2="-7.62" y2="-312.42" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-312.42" x2="-7.62" y2="-287.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$99" class="0">
@@ -1415,18 +1414,31 @@
 <wire x1="-15.24" y1="-485.14" x2="-15.24" y2="-449.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$105" class="0">
-<segment>
-<pinref part="E2" gate="G$1" pin="SH1"/>
-<wire x1="17.78" y1="-490.22" x2="-15.24" y2="-490.22" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-490.22" x2="-15.24" y2="-500.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$106" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="E2" gate="G$1" pin="SH2"/>
-<wire x1="17.78" y1="-495.3" x2="-10.16" y2="-495.3" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-495.3" x2="-10.16" y2="-500.38" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-495.3" x2="7.62" y2="-495.3" width="0.1524" layer="91"/>
+<pinref part="E2" gate="G$1" pin="SH1"/>
+<wire x1="17.78" y1="-490.22" x2="7.62" y2="-490.22" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-490.22" x2="7.62" y2="-495.3" width="0.1524" layer="91"/>
+<junction x="7.62" y="-495.3"/>
+<wire x1="7.62" y1="-495.3" x2="7.62" y2="-500.38" width="0.1524" layer="91"/>
+<label x="2.54" y="-500.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="E1" gate="G$1" pin="SH2"/>
+<wire x1="15.24" y1="-408.94" x2="7.62" y2="-408.94" width="0.1524" layer="91"/>
+<pinref part="E1" gate="G$1" pin="SH1"/>
+<wire x1="15.24" y1="-403.86" x2="7.62" y2="-403.86" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-403.86" x2="7.62" y2="-408.94" width="0.1524" layer="91"/>
+<junction x="7.62" y="-408.94"/>
+<wire x1="7.62" y1="-408.94" x2="7.62" y2="-414.02" width="0.1524" layer="91"/>
+<label x="2.54" y="-414.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ETH12" gate="G$1" pin="SHD1"/>
+<wire x1="15.24" y1="-325.12" x2="7.62" y2="-325.12" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-325.12" x2="7.62" y2="-332.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1471,18 +1483,11 @@
 <wire x1="-17.78" y1="-398.78" x2="-17.78" y2="-363.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$107" class="0">
+<net name="N$105" class="0">
 <segment>
-<pinref part="E1" gate="G$1" pin="SH1"/>
-<wire x1="15.24" y1="-403.86" x2="-17.78" y2="-403.86" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-403.86" x2="-17.78" y2="-414.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$108" class="0">
-<segment>
-<pinref part="E1" gate="G$1" pin="SH2"/>
-<wire x1="15.24" y1="-408.94" x2="-12.7" y2="-408.94" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-408.94" x2="-12.7" y2="-414.02" width="0.1524" layer="91"/>
+<pinref part="ETH12" gate="G$1" pin="SHD2"/>
+<wire x1="15.24" y1="-327.66" x2="7.62" y2="-327.66" width="0.1524" layer="91"/>
+<junction x="7.62" y="-327.66"/>
 </segment>
 </net>
 </nets>
