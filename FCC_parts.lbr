@@ -484,7 +484,6 @@
 <pin name="PB_10(SERIAL3_TX/I2C2_SCL/SPI2_SCLK/PWM2/3)" x="-71.12" y="-15.24" length="middle"/>
 <pin name="PB_11(SERIAL3_RX/I2C2_SDA/PWM2/4)" x="-71.12" y="-17.78" length="middle"/>
 <text x="-66.04" y="-71.12" size="1.778" layer="95">NUCLEO-F746ZG</text>
-<text x="-66.04" y="66.04" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 <symbol name="SN74LVC245A">
 <wire x1="-7.62" y1="25.4" x2="-7.62" y2="-25.4" width="0.254" layer="94"/>
