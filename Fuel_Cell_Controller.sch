@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -635,6 +636,67 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="openlog">
+<packages>
+<package name="OPENLOG">
+<wire x1="-7.62" y1="9.525" x2="7.62" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-9.525" x2="7.62" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-9.525" x2="-7.62" y2="9.525" width="0.127" layer="21"/>
+<wire x1="7.62" y1="9.525" x2="7.62" y2="-9.525" width="0.127" layer="21"/>
+<pad name="P$1" x="-6.35" y="-8.255" drill="0.8"/>
+<pad name="P$2" x="-3.81" y="-8.255" drill="0.8"/>
+<pad name="P$3" x="-1.27" y="-8.255" drill="0.8"/>
+<pad name="P$4" x="1.27" y="-8.255" drill="0.8"/>
+<pad name="P$5" x="3.81" y="-8.255" drill="0.8"/>
+<pad name="P$6" x="6.35" y="-8.255" drill="0.8"/>
+<text x="-6.858" y="-7.112" size="0.4064" layer="21">GRN</text>
+<text x="-4.064" y="-7.112" size="0.4064" layer="21">RXI</text>
+<text x="-1.778" y="-7.112" size="0.4064" layer="21">TXO</text>
+<text x="0.762" y="-7.112" size="0.4064" layer="21">VCC</text>
+<text x="3.302" y="-7.112" size="0.4064" layer="21">GND</text>
+<text x="5.842" y="-7.112" size="0.4064" layer="21">BLK</text>
+<text x="-2.54" y="2.286" size="1.016" layer="21">OPENLOG</text>
+</package>
+</packages>
+<symbols>
+<symbol name="OPENLOG">
+<pin name="DTR" x="-5.08" y="12.7" length="middle"/>
+<pin name="RXI" x="-5.08" y="7.62" length="middle"/>
+<pin name="TXO" x="-5.08" y="2.54" length="middle"/>
+<pin name="RAW" x="-5.08" y="-2.54" length="middle"/>
+<pin name="GND" x="-5.08" y="-7.62" length="middle"/>
+<pin name="GND2" x="-5.08" y="-12.7" length="middle"/>
+<wire x1="0" y1="-15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<text x="0" y="17.78" size="1.778" layer="94">&gt;name</text>
+<text x="0" y="-17.78" size="1.778" layer="94">&gt;value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="OPENLOG">
+<gates>
+<gate name="G$1" symbol="OPENLOG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OPENLOG">
+<connects>
+<connect gate="G$1" pin="DTR" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$5"/>
+<connect gate="G$1" pin="GND2" pad="P$6"/>
+<connect gate="G$1" pin="RAW" pad="P$4"/>
+<connect gate="G$1" pin="RXI" pad="P$2"/>
+<connect gate="G$1" pin="TXO" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -660,6 +722,7 @@
 <part name="E1" library="5555140-6 RJ11" deviceset="5555140-6" device=""/>
 <part name="E2" library="5555140-6 RJ11" deviceset="5555140-6" device=""/>
 <part name="U$1" library="FCC_parts" deviceset="NUCLEO-F746ZG" device="NUCLEO-F746ZG"/>
+<part name="U$2" library="openlog" deviceset="OPENLOG" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -668,10 +731,29 @@
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
+<instance part="U$2" gate="G$1" x="-175.26" y="53.34" rot="MR0"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="-71.12" y1="33.02" x2="-88.9" y2="33.02" width="0.1524" layer="91"/>
+<label x="-88.9" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$106" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="-170.18" y1="45.72" x2="-160.02" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="45.72" x2="-160.02" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND2"/>
+<wire x1="-160.02" y1="40.64" x2="-160.02" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="40.64" x2="-160.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-160.02" y="40.64"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
