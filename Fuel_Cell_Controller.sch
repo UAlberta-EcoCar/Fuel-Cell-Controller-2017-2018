@@ -697,6 +697,34 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="E-P-008-R1.2">
+<description>Generated from &lt;b&gt;E-P-008-R1.2.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -723,6 +751,7 @@
 <part name="E2" library="5555140-6 RJ11" deviceset="5555140-6" device=""/>
 <part name="U$1" library="FCC_parts" deviceset="NUCLEO-F746ZG" device="NUCLEO-F746ZG"/>
 <part name="U$2" library="openlog" deviceset="OPENLOG" device=""/>
+<part name="GND1" library="E-P-008-R1.2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -732,6 +761,7 @@
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="U$2" gate="G$1" x="-175.26" y="53.34" rot="MR0"/>
+<instance part="GND1" gate="1" x="-160.02" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -742,8 +772,6 @@
 <wire x1="-71.12" y1="33.02" x2="-88.9" y2="33.02" width="0.1524" layer="91"/>
 <label x="-88.9" y="33.02" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$106" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="-170.18" y1="45.72" x2="-160.02" y2="45.72" width="0.1524" layer="91"/>
@@ -752,6 +780,55 @@
 <wire x1="-160.02" y1="40.64" x2="-160.02" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-170.18" y1="40.64" x2="-160.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-160.02" y="40.64"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="N$106" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="NRST"/>
+<wire x1="-71.12" y1="63.5" x2="-88.9" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="5V"/>
+<wire x1="-71.12" y1="48.26" x2="-88.9" y2="48.26" width="0.1524" layer="91"/>
+<label x="-88.9" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="RAW"/>
+<wire x1="-170.18" y1="50.8" x2="-160.02" y2="50.8" width="0.1524" layer="91"/>
+<label x="-165.1" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FROM_OPEN" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="TXO"/>
+<wire x1="-170.18" y1="55.88" x2="-160.02" y2="55.88" width="0.1524" layer="91"/>
+<label x="-165.1" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD_6(SERIAL2_RX/SPI3_MOSI)"/>
+<wire x1="71.12" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
+<label x="86.36" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$109" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="DTR"/>
+<wire x1="-170.18" y1="66.04" x2="-160.02" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TO_OPEN" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD_5(SERIAL2_TX)"/>
+<wire x1="71.12" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<label x="86.36" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="RXI"/>
+<wire x1="-170.18" y1="60.96" x2="-160.02" y2="60.96" width="0.1524" layer="91"/>
+<label x="-165.1" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
