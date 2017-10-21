@@ -10,6 +10,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -431,6 +445,67 @@
 <wire x1="22.86" y1="60.96" x2="29.21" y2="60.96" width="0.254" layer="21"/>
 <text x="-34.29" y="67.31" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="DIL20">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="12.7" y1="2.921" x2="-12.7" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="2.921" x2="-12.7" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-2.921" x2="-12.7" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="1.016" x2="-12.7" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-13.081" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-9.779" y="-0.381" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="H11L1">
+<pad name="ANODE" x="-4.635" y="2.54" drill="0.6" shape="square"/>
+<pad name="CATHODE" x="-4.635" y="0" drill="0.6" shape="square"/>
+<pad name="3" x="-4.635" y="-2.54" drill="0.6" shape="square"/>
+<pad name="VCC" x="4.635" y="2.54" drill="0.6" shape="square"/>
+<pad name="GND" x="4.635" y="0" drill="0.6" shape="square"/>
+<pad name="VO" x="4.635" y="-2.54" drill="0.6" shape="square"/>
+<wire x1="-3.25" y1="3.56" x2="3.25" y2="3.56" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-3.56" x2="3.25" y2="-3.56" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="3.56" x2="-3.25" y2="-3.56" width="0.127" layer="51"/>
+<wire x1="3.25" y1="3.56" x2="3.25" y2="-3.56" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="3.56" x2="-3.25" y2="-3.56" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="-3.56" x2="3.25" y2="-3.56" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="3.56" x2="3.25" y2="3.56" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="3.56" x2="3.25" y2="-3.56" width="0.2032" layer="21"/>
+<text x="-5" y="4" size="1.27" layer="25">Photocoupler</text>
+<text x="-5" y="-5" size="1.27" layer="27">H11L1</text>
+</package>
+<package name="DMP3056L-7">
+<smd name="G" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="S" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="D" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>
+<wire x1="-1.45" y1="1.2" x2="-1.45" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="-1.45" y1="-1.2" x2="1.45" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="1.45" y1="-1.2" x2="1.45" y2="1.2" width="0.127" layer="51"/>
+<wire x1="1.45" y1="1.2" x2="-1.45" y2="1.2" width="0.127" layer="51"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
+<text x="-2.54" y="1.905" size="1.27" layer="27">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="NUCLEO-F746ZG">
@@ -528,6 +603,57 @@
 <pin name="PB_10(SERIAL3_TX/I2C2_SCL/SPI2_SCLK/PWM2/3)" x="-71.12" y="-15.24" length="middle"/>
 <pin name="PB_11(SERIAL3_RX/I2C2_SDA/PWM2/4)" x="-71.12" y="-17.78" length="middle"/>
 <text x="-66.04" y="-71.12" size="1.778" layer="95">NUCLEO-F746ZG</text>
+</symbol>
+<symbol name="SN74LVC245A">
+<wire x1="-7.62" y1="25.4" x2="-7.62" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-25.4" x2="7.62" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-25.4" x2="7.62" y2="25.4" width="0.254" layer="94"/>
+<wire x1="7.62" y1="25.4" x2="-7.62" y2="25.4" width="0.254" layer="94"/>
+<pin name="DIR" x="-12.7" y="22.86" length="middle"/>
+<pin name="A1" x="-12.7" y="17.78" length="middle"/>
+<pin name="A2" x="-12.7" y="12.7" length="middle"/>
+<pin name="A3" x="-12.7" y="7.62" length="middle"/>
+<pin name="A4" x="-12.7" y="2.54" length="middle"/>
+<pin name="A5" x="-12.7" y="-2.54" length="middle"/>
+<pin name="A6" x="-12.7" y="-7.62" length="middle"/>
+<pin name="A7" x="-12.7" y="-12.7" length="middle"/>
+<pin name="A8" x="-12.7" y="-17.78" length="middle"/>
+<pin name="GND" x="-12.7" y="-22.86" length="middle"/>
+<pin name="VCC" x="12.7" y="22.86" length="middle" rot="R180"/>
+<pin name="OE*" x="12.7" y="17.78" length="middle" rot="R180"/>
+<pin name="B1" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="B2" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="B3" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="B4" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="B5" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="B6" x="12.7" y="-12.7" length="middle" rot="R180"/>
+<pin name="B7" x="12.7" y="-17.78" length="middle" rot="R180"/>
+<pin name="B8" x="12.7" y="-22.86" length="middle" rot="R180"/>
+<text x="-7.62" y="25.4" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="H11L1">
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="ANODE" x="-15.24" y="5.08" length="middle"/>
+<pin name="CATHODE" x="-15.24" y="0" length="middle"/>
+<pin name="3" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VCC" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VO" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">H11L1</text>
+<text x="-10.16" y="7.62" size="1.27" layer="95">PHOTOCOUPLER</text>
+</symbol>
+<symbol name="DMP3056L-7">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="DRAIN" x="-12.7" y="0" length="middle"/>
+<pin name="GATE" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="SOURCE" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -627,6 +753,77 @@
 <connect gate="G$1" pin="PH_0" pad="PH_0"/>
 <connect gate="G$1" pin="PH_1" pad="PH_1"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LVC245AN">
+<gates>
+<gate name="G$1" symbol="SN74LVC245A" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DIL20">
+<connects>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="B1" pad="18"/>
+<connect gate="G$1" pin="B2" pad="17"/>
+<connect gate="G$1" pin="B3" pad="16"/>
+<connect gate="G$1" pin="B4" pad="15"/>
+<connect gate="G$1" pin="B5" pad="14"/>
+<connect gate="G$1" pin="B6" pad="13"/>
+<connect gate="G$1" pin="B7" pad="12"/>
+<connect gate="G$1" pin="B8" pad="11"/>
+<connect gate="G$1" pin="DIR" pad="1"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="OE*" pad="19"/>
+<connect gate="G$1" pin="VCC" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="H11L1">
+<gates>
+<gate name="G$1" symbol="H11L1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="H11L1" package="H11L1">
+<connects>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VO" pad="VO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMP3056L-7">
+<gates>
+<gate name="G$1" symbol="DMP3056L-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DMP3056L-7" package="DMP3056L-7">
+<connects>
+<connect gate="G$1" pin="DRAIN" pad="D"/>
+<connect gate="G$1" pin="GATE" pad="G"/>
+<connect gate="G$1" pin="SOURCE" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6018,6 +6215,13 @@ D = Direct mounting &lt;p&gt;
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1µF"/>
 <part name="GND3" library="E-P-008-R1.2" deviceset="GND" device=""/>
 <part name="X2" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F09" device="HP" package3d_urn="urn:adsk.eagle:package:10232/1"/>
+<part name="U$3" library="FCC_parts" deviceset="SN74LVC245AN" device=""/>
+<part name="U$4" library="FCC_parts" deviceset="H11L1" device="H11L1"/>
+<part name="U$5" library="FCC_parts" deviceset="H11L1" device="H11L1"/>
+<part name="U$6" library="FCC_parts" deviceset="H11L1" device="H11L1"/>
+<part name="U$7" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
+<part name="U$8" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
+<part name="U$9" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 </parts>
 <sheets>
 <sheet>
@@ -6327,6 +6531,14 @@ D = Direct mounting &lt;p&gt;
 <text x="-15.24" y="215.9" size="1.778" layer="94">ETHERNET CONNECTORS</text>
 <text x="99.06" y="215.9" size="1.778" layer="94">POWER CONNECTORS</text>
 <text x="20.32" y="-187.96" size="1.778" layer="94">Motor Controller</text>
+<wire x1="-15.24" y1="213.36" x2="-15.24" y2="-243.84" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="-243.84" x2="86.36" y2="-243.84" width="0.1524" layer="94"/>
+<wire x1="86.36" y1="-243.84" x2="86.36" y2="213.36" width="0.1524" layer="94"/>
+<wire x1="86.36" y1="213.36" x2="-15.24" y2="213.36" width="0.1524" layer="94"/>
+<wire x1="99.06" y1="213.36" x2="223.52" y2="213.36" width="0.1524" layer="94"/>
+<wire x1="223.52" y1="213.36" x2="223.52" y2="134.62" width="0.1524" layer="94"/>
+<wire x1="223.52" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="94"/>
+<wire x1="99.06" y1="134.62" x2="99.06" y2="213.36" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="ETH7" gate="G$1" x="20.32" y="-96.52"/>
@@ -6369,28 +6581,28 @@ D = Direct mounting &lt;p&gt;
 <label x="0" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VALVE_1" class="0">
+<net name="SUPPLY_VALVE" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="-137.16" x2="7.62" y2="-137.16" width="0.1524" layer="91"/>
 <label x="-2.54" y="-137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VALVE_2" class="0">
+<net name="PURGE_VALVE" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="3"/>
 <wire x1="15.24" y1="-142.24" x2="7.62" y2="-142.24" width="0.1524" layer="91"/>
 <label x="-2.54" y="-142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VALVE_3" class="0">
+<net name="OUTPUT_1" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="5"/>
 <wire x1="15.24" y1="-147.32" x2="7.62" y2="-147.32" width="0.1524" layer="91"/>
 <label x="-2.54" y="-147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VALVE_4" class="0">
+<net name="OUTPUT_2" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="7"/>
 <wire x1="15.24" y1="-152.4" x2="7.62" y2="-152.4" width="0.1524" layer="91"/>
@@ -6964,22 +7176,24 @@ D = Direct mounting &lt;p&gt;
 <label x="0" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="-17.78" y1="213.36" x2="88.9" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="213.36" x2="88.9" y2="-246.38" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-246.38" x2="-17.78" y2="-246.38" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-246.38" x2="-17.78" y2="213.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="96.52" y1="213.36" x2="231.14" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="213.36" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="129.54" x2="96.52" y2="213.36" width="0.1524" layer="91"/>
-</segment>
-</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="-7.62" y="83.82" size="1.778" layer="94">FANS</text>
+</plain>
+<instances>
+<instance part="U$3" gate="G$1" x="20.32" y="48.26"/>
+<instance part="U$4" gate="G$1" x="81.28" y="66.04"/>
+<instance part="U$5" gate="G$1" x="81.28" y="43.18"/>
+<instance part="U$6" gate="G$1" x="81.28" y="20.32"/>
+<instance part="U$7" gate="G$1" x="134.62" y="58.42"/>
+<instance part="U$8" gate="G$1" x="134.62" y="30.48"/>
+<instance part="U$9" gate="G$1" x="134.62" y="5.08"/>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
