@@ -506,6 +506,30 @@
 <wire x1="-1.27" y1="0" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
 <text x="-2.54" y="1.905" size="1.27" layer="27">&gt;NAME</text>
 </package>
+<package name="UMFT234XF">
+<smd name="9" x="1.65" y="6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<wire x1="10.5" y1="6.35" x2="10.5" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="10.5" y1="-6.35" x2="-10.5" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-6.35" x2="-10.5" y2="6.35" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="6.35" x2="10.5" y2="6.35" width="0.127" layer="51"/>
+<smd name="8" x="4.19" y="6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="7" x="6.73" y="6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="1" x="-0.89" y="-6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="10" x="-0.89" y="6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="5" x="9.27" y="-6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="6" x="9.27" y="6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="2" x="1.65" y="-6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="3" x="4.19" y="-6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<smd name="4" x="6.73" y="-6.35" dx="1.755" dy="2.025" layer="1" roundness="100"/>
+<wire x1="-3" y1="6" x2="-10" y2="6" width="0.2032" layer="21"/>
+<wire x1="-10" y1="6" x2="-10" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-10" y1="-6" x2="-3" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-1" y1="4" x2="9" y2="4" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-4" x2="9" y2="-4" width="0.2032" layer="21"/>
+<wire x1="11" y1="-5" x2="11" y2="5" width="0.2032" layer="21"/>
+<text x="-10" y="7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10" y="-8" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="NUCLEO-F746ZG">
@@ -654,6 +678,22 @@
 <pin name="GATE" x="12.7" y="5.08" length="middle" rot="R180"/>
 <pin name="SOURCE" x="12.7" y="-5.08" length="middle" rot="R180"/>
 <text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="UMFT234XF">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="RST*" x="-15.24" y="10.16" length="middle"/>
+<pin name="3V3" x="-15.24" y="5.08" length="middle"/>
+<pin name="VIO" x="-15.24" y="0" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VBUS" x="-15.24" y="-10.16" length="middle"/>
+<pin name="CTS*" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="RXD" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="RTS*" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="TXD" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="CBO" x="15.24" y="-10.16" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -824,6 +864,30 @@
 <connect gate="G$1" pin="DRAIN" pad="D"/>
 <connect gate="G$1" pin="GATE" pad="G"/>
 <connect gate="G$1" pin="SOURCE" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UMFT234XF">
+<gates>
+<gate name="G$1" symbol="UMFT234XF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="UMFT234XF" package="UMFT234XF">
+<connects>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="CBO" pad="6"/>
+<connect gate="G$1" pin="CTS*" pad="10"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="RST*" pad="1"/>
+<connect gate="G$1" pin="RTS*" pad="8"/>
+<connect gate="G$1" pin="RXD" pad="9"/>
+<connect gate="G$1" pin="TXD" pad="7"/>
+<connect gate="G$1" pin="VBUS" pad="5"/>
+<connect gate="G$1" pin="VIO" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6222,6 +6286,7 @@ D = Direct mounting &lt;p&gt;
 <part name="U$7" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$8" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$9" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
+<part name="U$10" library="FCC_parts" deviceset="UMFT234XF" device="UMFT234XF"/>
 </parts>
 <sheets>
 <sheet>
@@ -6230,7 +6295,8 @@ D = Direct mounting &lt;p&gt;
 <text x="-38.1" y="71.12" size="6.4516" layer="94">NUCLEO-F746ZG</text>
 <text x="149.86" y="71.12" size="3.81" layer="94">OPENLOG</text>
 <wire x1="139.7" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="94"/>
-<wire x1="185.42" y1="78.74" x2="185.42" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="185.42" y1="78.74" x2="185.42" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="185.42" y1="33.02" x2="185.42" y2="20.32" width="0.1524" layer="94"/>
 <wire x1="185.42" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="94"/>
 <wire x1="139.7" y1="20.32" x2="139.7" y2="78.74" width="0.1524" layer="94"/>
 <text x="147.32" y="12.7" size="3.81" layer="94">BLUETOOTH</text>
@@ -6249,6 +6315,10 @@ D = Direct mounting &lt;p&gt;
 <wire x1="210.82" y1="-27.94" x2="307.34" y2="-27.94" width="0.1524" layer="94"/>
 <wire x1="307.34" y1="-27.94" x2="307.34" y2="-68.58" width="0.1524" layer="94"/>
 <wire x1="307.34" y1="-68.58" x2="210.82" y2="-68.58" width="0.1524" layer="94"/>
+<text x="208.28" y="68.58" size="3.81" layer="94">FTDI CHIP</text>
+<wire x1="185.42" y1="78.74" x2="264.16" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="264.16" y1="78.74" x2="264.16" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="264.16" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -6264,6 +6334,7 @@ D = Direct mounting &lt;p&gt;
 <instance part="C5" gate="G$1" x="190.5" y="-53.34" rot="R270"/>
 <instance part="GND3" gate="1" x="198.12" y="-58.42"/>
 <instance part="X2" gate="G$1" x="259.08" y="-53.34"/>
+<instance part="U$10" gate="G$1" x="220.98" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -6312,6 +6383,11 @@ D = Direct mounting &lt;p&gt;
 <pinref part="X2" gate="G$1" pin="5"/>
 <wire x1="251.46" y1="-58.42" x2="231.14" y2="-58.42" width="0.1524" layer="91"/>
 <label x="231.14" y="-58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="GND"/>
+<wire x1="205.74" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
+<label x="193.04" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -6512,6 +6588,39 @@ D = Direct mounting &lt;p&gt;
 <pinref part="X2" gate="G$1" pin="3"/>
 <wire x1="251.46" y1="-53.34" x2="231.14" y2="-53.34" width="0.1524" layer="91"/>
 <label x="231.14" y="-53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="3V3"/>
+<wire x1="205.74" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="58.42" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="VIO"/>
+<wire x1="200.66" y1="53.34" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TO_FTDI" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="RXD"/>
+<wire x1="236.22" y1="58.42" x2="251.46" y2="58.42" width="0.1524" layer="91"/>
+<label x="246.38" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_8(SERIAL7_TX/PWM1/1)"/>
+<wire x1="71.12" y1="10.16" x2="91.44" y2="10.16" width="0.1524" layer="91"/>
+<label x="86.36" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FROM_FTDI" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="TXD"/>
+<wire x1="236.22" y1="48.26" x2="251.46" y2="48.26" width="0.1524" layer="91"/>
+<label x="246.38" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_7(SERIAL7_RX)"/>
+<wire x1="71.12" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
+<label x="86.36" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
