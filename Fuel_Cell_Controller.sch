@@ -6284,6 +6284,7 @@ D = Direct mounting &lt;p&gt;
 <part name="U$8" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$9" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$10" library="FCC_parts" deviceset="UMFT234XF" device="UMFT234XF"/>
+<part name="U$5" library="FCC_parts" deviceset="SN74LVC245AN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6330,6 +6331,7 @@ D = Direct mounting &lt;p&gt;
 <instance part="GND3" gate="1" x="198.12" y="-58.42"/>
 <instance part="X2" gate="G$1" x="233.68" y="5.08"/>
 <instance part="U$10" gate="G$1" x="220.98" y="53.34"/>
+<instance part="U$5" gate="G$1" x="-48.26" y="-106.68"/>
 </instances>
 <busses>
 </busses>
@@ -6384,6 +6386,11 @@ D = Direct mounting &lt;p&gt;
 <wire x1="205.74" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 <label x="193.04" y="48.26" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<wire x1="-60.96" y1="-129.54" x2="-83.82" y2="-129.54" width="0.1524" layer="91"/>
+<label x="-83.82" y="-129.54" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -6414,6 +6421,16 @@ D = Direct mounting &lt;p&gt;
 <junction x="182.88" y="-35.56"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="-35.56" x2="198.12" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="DIR"/>
+<wire x1="-60.96" y1="-83.82" x2="-83.82" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-83.82" y="-83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VCC"/>
+<wire x1="-35.56" y1="-83.82" x2="-20.32" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-25.4" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FROM_OPEN" class="0">
@@ -6660,39 +6677,11 @@ D = Direct mounting &lt;p&gt;
 <label x="-99.06" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FCC_RELAY" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PB_0(LED1)"/>
-<wire x1="-71.12" y1="7.62" x2="-99.06" y2="7.62" width="0.1524" layer="91"/>
-<label x="-99.06" y="7.62" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="PRESSURE_1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB_1(ANALOGIN/PWM1/3)"/>
 <wire x1="-71.12" y1="5.08" x2="-99.06" y2="5.08" width="0.1524" layer="91"/>
 <label x="-99.06" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CAP_RELAY" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PB_2(SPI3_MOSI)"/>
-<wire x1="-71.12" y1="2.54" x2="-99.06" y2="2.54" width="0.1524" layer="91"/>
-<label x="-99.06" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MOTOR_RELAY" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PB_3(SPI1_SCLK/PWM2/2)"/>
-<wire x1="-71.12" y1="0" x2="-99.06" y2="0" width="0.1524" layer="91"/>
-<label x="-99.06" y="0" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CHARGE_RELAY" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PB_4(SPI2_SSEL/SPI1_MISO/PWM3/1)"/>
-<wire x1="-71.12" y1="-2.54" x2="-99.06" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-99.06" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="STOP" class="0">
@@ -6800,27 +6789,6 @@ D = Direct mounting &lt;p&gt;
 <label x="86.36" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PWM_1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PE_11(D5/SPI4_SSEL/PWM1/2)"/>
-<wire x1="71.12" y1="2.54" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
-<label x="86.36" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PWM_2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PE_12(SPI4_SCLK/PWM1/3)"/>
-<wire x1="71.12" y1="0" x2="91.44" y2="0" width="0.1524" layer="91"/>
-<label x="86.36" y="0" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PWM_3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PE_14(SPI4_MOSI/PWM1/4)"/>
-<wire x1="71.12" y1="-5.08" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
-<label x="86.36" y="-5.08" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FCTEMP_1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PF_3(A3/ANALOGIN)"/>
@@ -6868,6 +6836,160 @@ D = Direct mounting &lt;p&gt;
 <pinref part="U$1" gate="G$1" pin="PF_10(A5/ANALOGIN)"/>
 <wire x1="71.12" y1="-30.48" x2="91.44" y2="-30.48" width="0.1524" layer="91"/>
 <label x="86.36" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="OE*"/>
+<wire x1="-35.56" y1="-88.9" x2="-20.32" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-25.4" y="-88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FCC_RELAY" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B1"/>
+<wire x1="-35.56" y1="-93.98" x2="-20.32" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-25.4" y="-93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="A8"/>
+<wire x1="-60.96" y1="-124.46" x2="-83.82" y2="-124.46" width="0.1524" layer="91"/>
+<label x="-83.82" y="-124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAP_RELAY" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B2"/>
+<wire x1="-35.56" y1="-99.06" x2="-20.32" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-25.4" y="-99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_RELAY" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B3"/>
+<wire x1="-35.56" y1="-104.14" x2="-20.32" y2="-104.14" width="0.1524" layer="91"/>
+<label x="-25.4" y="-104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CHARGE_RELAY" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B4"/>
+<wire x1="-35.56" y1="-109.22" x2="-20.32" y2="-109.22" width="0.1524" layer="91"/>
+<label x="-25.4" y="-109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_1" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B5"/>
+<wire x1="-35.56" y1="-114.3" x2="-20.32" y2="-114.3" width="0.1524" layer="91"/>
+<label x="-25.4" y="-114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_2" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B6"/>
+<wire x1="-35.56" y1="-119.38" x2="-20.32" y2="-119.38" width="0.1524" layer="91"/>
+<label x="-25.4" y="-119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_3" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B7"/>
+<wire x1="-35.56" y1="-124.46" x2="-20.32" y2="-124.46" width="0.1524" layer="91"/>
+<label x="-25.4" y="-124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B8"/>
+<wire x1="-35.56" y1="-129.54" x2="-20.32" y2="-129.54" width="0.1524" layer="91"/>
+<label x="-25.4" y="-129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="_FCC_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_0(LED1)"/>
+<wire x1="-71.12" y1="7.62" x2="-99.06" y2="7.62" width="0.1524" layer="91"/>
+<label x="-99.06" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A1"/>
+<wire x1="-60.96" y1="-88.9" x2="-83.82" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-83.82" y="-88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="_CAP_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_2(SPI3_MOSI)"/>
+<wire x1="-71.12" y1="2.54" x2="-99.06" y2="2.54" width="0.1524" layer="91"/>
+<label x="-99.06" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A2"/>
+<wire x1="-60.96" y1="-93.98" x2="-83.82" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-83.82" y="-93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="_MOTOR_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_3(SPI1_SCLK/PWM2/2)"/>
+<wire x1="-71.12" y1="0" x2="-99.06" y2="0" width="0.1524" layer="91"/>
+<label x="-99.06" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A3"/>
+<wire x1="-60.96" y1="-99.06" x2="-83.82" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-83.82" y="-99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="_CHARGE_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_4(SPI2_SSEL/SPI1_MISO/PWM3/1)"/>
+<wire x1="-71.12" y1="-2.54" x2="-99.06" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-99.06" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A4"/>
+<wire x1="-60.96" y1="-104.14" x2="-83.82" y2="-104.14" width="0.1524" layer="91"/>
+<label x="-83.82" y="-104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="_PWM_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_11(D5/SPI4_SSEL/PWM1/2)"/>
+<wire x1="71.12" y1="2.54" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
+<label x="86.36" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A5"/>
+<wire x1="-60.96" y1="-109.22" x2="-83.82" y2="-109.22" width="0.1524" layer="91"/>
+<label x="-83.82" y="-109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="_PWM_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_12(SPI4_SCLK/PWM1/3)"/>
+<wire x1="71.12" y1="0" x2="91.44" y2="0" width="0.1524" layer="91"/>
+<label x="86.36" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A6"/>
+<wire x1="-60.96" y1="-114.3" x2="-83.82" y2="-114.3" width="0.1524" layer="91"/>
+<label x="-83.82" y="-114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="_PWM_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_14(SPI4_MOSI/PWM1/4)"/>
+<wire x1="71.12" y1="-5.08" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
+<label x="86.36" y="-5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A7"/>
+<wire x1="-60.96" y1="-119.38" x2="-83.82" y2="-119.38" width="0.1524" layer="91"/>
+<label x="-83.82" y="-119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
