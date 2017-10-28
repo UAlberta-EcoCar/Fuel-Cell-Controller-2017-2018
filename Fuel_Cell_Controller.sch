@@ -6342,8 +6342,8 @@ D = Direct mounting &lt;p&gt;
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="-71.12" y1="33.02" x2="-88.9" y2="33.02" width="0.1524" layer="91"/>
-<label x="-88.9" y="33.02" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="33.02" x2="-99.06" y2="33.02" width="0.1524" layer="91"/>
+<label x="-99.06" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -6362,8 +6362,8 @@ D = Direct mounting &lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
-<wire x1="-71.12" y1="35.56" x2="-88.9" y2="35.56" width="0.1524" layer="91"/>
-<label x="-88.9" y="35.56" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="35.56" x2="-99.06" y2="35.56" width="0.1524" layer="91"/>
+<label x="-99.06" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -6393,8 +6393,8 @@ D = Direct mounting &lt;p&gt;
 <net name="+5V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="5V"/>
-<wire x1="-71.12" y1="48.26" x2="-88.9" y2="48.26" width="0.1524" layer="91"/>
-<label x="-88.9" y="48.26" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="48.26" x2="-99.06" y2="48.26" width="0.1524" layer="91"/>
+<label x="-99.06" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="RAW"/>
@@ -6448,8 +6448,8 @@ D = Direct mounting &lt;p&gt;
 <net name="3V3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="3V3"/>
-<wire x1="-71.12" y1="45.72" x2="-88.9" y2="45.72" width="0.1524" layer="91"/>
-<label x="-88.9" y="45.72" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="45.72" x2="-99.06" y2="45.72" width="0.1524" layer="91"/>
+<label x="-99.06" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OPEN_RST" class="0">
@@ -6484,15 +6484,15 @@ D = Direct mounting &lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PC_12(SERIAL5_TX/SPI3_MOSI)"/>
-<wire x1="-71.12" y1="-53.34" x2="-88.9" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-88.9" y="-53.34" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="-53.34" x2="-99.06" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-99.06" y="-53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC12V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
-<wire x1="-71.12" y1="58.42" x2="-88.9" y2="58.42" width="0.1524" layer="91"/>
-<label x="-88.9" y="58.42" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="58.42" x2="-99.06" y2="58.42" width="0.1524" layer="91"/>
+<label x="-99.06" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -6545,8 +6545,8 @@ D = Direct mounting &lt;p&gt;
 <net name="MOTOR_TX" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB_10(SERIAL3_TX/I2C2_SCL/SPI2_SCLK/PWM2/3)"/>
-<wire x1="-71.12" y1="-15.24" x2="-88.9" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-88.9" y="-15.24" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="-15.24" x2="-99.06" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-99.06" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="T1IN"/>
@@ -6557,8 +6557,8 @@ D = Direct mounting &lt;p&gt;
 <net name="MOTOR_RX" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB_11(SERIAL3_RX/I2C2_SDA/PWM2/4)"/>
-<wire x1="-71.12" y1="-17.78" x2="-88.9" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-88.9" y="-17.78" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="-17.78" x2="-99.06" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-99.06" y="-17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="R1OUT"/>
@@ -6621,6 +6621,181 @@ D = Direct mounting &lt;p&gt;
 <pinref part="U$1" gate="G$1" pin="PE_7(SERIAL7_RX)"/>
 <wire x1="71.12" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
 <label x="86.36" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FC_VOLT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_0(SERIAL4_TX/ANALOGIN/SERIAL2_CTS/PWM2/1)"/>
+<wire x1="-71.12" y1="27.94" x2="-99.06" y2="27.94" width="0.1524" layer="91"/>
+<label x="-99.06" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_VOLT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_3(A0/ANALOGIN/SERIAL2_RX/PWM2/4)"/>
+<wire x1="-71.12" y1="25.4" x2="-99.06" y2="25.4" width="0.1524" layer="91"/>
+<label x="-99.06" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAP_VOLT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_4(ANALOGOUT/ANALOGIN/SPI1_SSEL)"/>
+<wire x1="-71.12" y1="22.86" x2="-99.06" y2="22.86" width="0.1524" layer="91"/>
+<label x="-99.06" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FC_CURR" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_5(D13/ANALOGOUT/ANALOGIN/SPI1_SCLK/PWM2/1)"/>
+<wire x1="-71.12" y1="20.32" x2="-99.06" y2="20.32" width="0.1524" layer="91"/>
+<label x="-99.06" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_CURR" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_6(D12/ANALOGIN/SPI1_MISO/PWM3/1)"/>
+<wire x1="-71.12" y1="17.78" x2="-99.06" y2="17.78" width="0.1524" layer="91"/>
+<label x="-99.06" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAP_CURR" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA_7(D11/ANALOGIN/SPI1_MOSI)"/>
+<wire x1="-71.12" y1="15.24" x2="-99.06" y2="15.24" width="0.1524" layer="91"/>
+<label x="-99.06" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FCC_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_0(LED1)"/>
+<wire x1="-71.12" y1="7.62" x2="-99.06" y2="7.62" width="0.1524" layer="91"/>
+<label x="-99.06" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_1(ANALOGIN/PWM1/3)"/>
+<wire x1="-71.12" y1="5.08" x2="-99.06" y2="5.08" width="0.1524" layer="91"/>
+<label x="-99.06" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAP_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_2(SPI3_MOSI)"/>
+<wire x1="-71.12" y1="2.54" x2="-99.06" y2="2.54" width="0.1524" layer="91"/>
+<label x="-99.06" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOTOR_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_3(SPI1_SCLK/PWM2/2)"/>
+<wire x1="-71.12" y1="0" x2="-99.06" y2="0" width="0.1524" layer="91"/>
+<label x="-99.06" y="0" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CHARGE_RELAY" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_4(SPI2_SSEL/SPI1_MISO/PWM3/1)"/>
+<wire x1="-71.12" y1="-2.54" x2="-99.06" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-99.06" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="STOP" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_5(CAN2_RD/SPI1_MOSI/PWM3/2)"/>
+<wire x1="-71.12" y1="-5.08" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-99.06" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="H2_OK" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_6(SERIAL1_TX/CAN2_TD/I2C1_SCL/PWM4/1)"/>
+<wire x1="-71.12" y1="-7.62" x2="-99.06" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-99.06" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESTOP_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_12(CAN2_RD/SPI2_SSEL)"/>
+<wire x1="-71.12" y1="-20.32" x2="-99.06" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-99.06" y="-20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESTOP_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_13(SERIAL3_CTS/CAN2_TD/SPI2_SCLK/PWM1/1)"/>
+<wire x1="-71.12" y1="-22.86" x2="-99.06" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-99.06" y="-22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TACH_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB_15(SPI2_MOSI/PWM12/2)"/>
+<wire x1="-71.12" y1="-25.4" x2="-99.06" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-99.06" y="-25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC_2(ANALOGIN/SPI2_MISO)"/>
+<wire x1="-71.12" y1="-33.02" x2="-99.06" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-99.06" y="-33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC_3(A2/ANALOGIN/SPI2_MOSI)"/>
+<wire x1="-71.12" y1="-35.56" x2="-99.06" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-99.06" y="-35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC_0(A1/ANALOGIN)"/>
+<wire x1="-71.12" y1="-30.48" x2="-99.06" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-99.06" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TACH_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC_8(SERIAL5_RTS/PWM8/3)"/>
+<wire x1="-71.12" y1="-43.18" x2="-99.06" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-99.06" y="-43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TACH_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC_9(I2C3_SDA/SERIAL5_CTS/PWM8/4)"/>
+<wire x1="-71.12" y1="-45.72" x2="-99.06" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-99.06" y="-45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SUPPLY_VALVE" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC_10(SERIAL3_TX/SPI3_SCLK)"/>
+<wire x1="-71.12" y1="-48.26" x2="-99.06" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-99.06" y="-48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PURGE_VALVE" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC_11(SERIAL4_RX/SPI3_MISO)"/>
+<wire x1="-71.12" y1="-50.8" x2="-99.06" y2="-50.8" width="0.1524" layer="91"/>
+<label x="-99.06" y="-50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OUTPUT_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD_0(CAN1_RD)"/>
+<wire x1="71.12" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<label x="86.36" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OUTPUT_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD_1(CAN1_TD)"/>
+<wire x1="71.12" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
+<label x="86.36" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -7076,14 +7251,14 @@ D = Direct mounting &lt;p&gt;
 <label x="0" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ESTOP1" class="0">
+<net name="ESTOP_1" class="0">
 <segment>
 <pinref part="ETH6" gate="G$1" pin="3"/>
 <wire x1="15.24" y1="-30.48" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
 <label x="0" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ESTOP2" class="0">
+<net name="ESTOP_2" class="0">
 <segment>
 <pinref part="ETH6" gate="G$1" pin="4"/>
 <wire x1="15.24" y1="-33.02" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
@@ -7303,6 +7478,24 @@ D = Direct mounting &lt;p&gt;
 <busses>
 </busses>
 <nets>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="96.52" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<wire x1="96.52" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+<wire x1="96.52" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
