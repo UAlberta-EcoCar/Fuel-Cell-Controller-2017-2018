@@ -6269,7 +6269,6 @@ D = Direct mounting &lt;p&gt;
 <part name="ETH3" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="ETH1" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="ARDUINO_SERIAL_PROGRAM" device="PTH"/>
-<part name="ETH10" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="MAX232" device="PTH"/>
 <part name="GND2" library="E-P-008-R1.2" deviceset="GND" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1µF"/>
@@ -6281,8 +6280,6 @@ D = Direct mounting &lt;p&gt;
 <part name="X2" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F09" device="HP" package3d_urn="urn:adsk.eagle:package:10232/1"/>
 <part name="U$3" library="FCC_parts" deviceset="SN74LVC245AN" device=""/>
 <part name="U$4" library="FCC_parts" deviceset="H11L1" device="H11L1"/>
-<part name="U$5" library="FCC_parts" deviceset="H11L1" device="H11L1"/>
-<part name="U$6" library="FCC_parts" deviceset="H11L1" device="H11L1"/>
 <part name="U$7" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$8" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$9" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
@@ -6304,21 +6301,19 @@ D = Direct mounting &lt;p&gt;
 <wire x1="139.7" y1="-15.24" x2="185.42" y2="-15.24" width="0.1524" layer="94"/>
 <wire x1="185.42" y1="-15.24" x2="185.42" y2="20.32" width="0.1524" layer="94"/>
 <text x="132.08" y="-25.4" size="3.81" layer="94">DUAL RS232 CONVERTER</text>
-<text x="215.9" y="-35.56" size="3.81" layer="94">RS232 TO MOTOR CONTROLLER</text>
+<text x="190.5" y="22.86" size="3.81" layer="94">RS232 TO MOTOR CONTROLLER</text>
 <wire x1="139.7" y1="-15.24" x2="124.46" y2="-15.24" width="0.1524" layer="94"/>
 <wire x1="124.46" y1="-15.24" x2="124.46" y2="-96.52" width="0.1524" layer="94"/>
 <wire x1="124.46" y1="-96.52" x2="210.82" y2="-96.52" width="0.1524" layer="94"/>
-<wire x1="210.82" y1="-96.52" x2="210.82" y2="-68.58" width="0.1524" layer="94"/>
-<wire x1="210.82" y1="-68.58" x2="210.82" y2="-27.94" width="0.1524" layer="94"/>
-<wire x1="210.82" y1="-27.94" x2="210.82" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="210.82" y1="-96.52" x2="210.82" y2="-15.24" width="0.1524" layer="94"/>
 <wire x1="210.82" y1="-15.24" x2="185.42" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="210.82" y1="-27.94" x2="307.34" y2="-27.94" width="0.1524" layer="94"/>
-<wire x1="307.34" y1="-27.94" x2="307.34" y2="-68.58" width="0.1524" layer="94"/>
-<wire x1="307.34" y1="-68.58" x2="210.82" y2="-68.58" width="0.1524" layer="94"/>
 <text x="208.28" y="68.58" size="3.81" layer="94">FTDI CHIP</text>
 <wire x1="185.42" y1="78.74" x2="264.16" y2="78.74" width="0.1524" layer="94"/>
 <wire x1="264.16" y1="78.74" x2="264.16" y2="33.02" width="0.1524" layer="94"/>
 <wire x1="264.16" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="264.16" y1="33.02" x2="281.94" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="281.94" y1="33.02" x2="281.94" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="281.94" y1="-15.24" x2="210.82" y2="-15.24" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -6333,7 +6328,7 @@ D = Direct mounting &lt;p&gt;
 <instance part="C4" gate="G$1" x="182.88" y="-43.18" rot="R180"/>
 <instance part="C5" gate="G$1" x="190.5" y="-53.34" rot="R270"/>
 <instance part="GND3" gate="1" x="198.12" y="-58.42"/>
-<instance part="X2" gate="G$1" x="259.08" y="-53.34"/>
+<instance part="X2" gate="G$1" x="233.68" y="5.08"/>
 <instance part="U$10" gate="G$1" x="220.98" y="53.34"/>
 </instances>
 <busses>
@@ -6381,8 +6376,8 @@ D = Direct mounting &lt;p&gt;
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="5"/>
-<wire x1="251.46" y1="-58.42" x2="231.14" y2="-58.42" width="0.1524" layer="91"/>
-<label x="231.14" y="-58.42" size="1.778" layer="95"/>
+<wire x1="226.06" y1="0" x2="205.74" y2="0" width="0.1524" layer="91"/>
+<label x="205.74" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="GND"/>
@@ -6574,8 +6569,8 @@ D = Direct mounting &lt;p&gt;
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="-50.8" x2="231.14" y2="-50.8" width="0.1524" layer="91"/>
-<label x="231.14" y="-50.8" size="1.778" layer="95"/>
+<wire x1="226.06" y1="7.62" x2="205.74" y2="7.62" width="0.1524" layer="91"/>
+<label x="205.74" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FROM_MOTOR" class="0">
@@ -6586,8 +6581,8 @@ D = Direct mounting &lt;p&gt;
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="3"/>
-<wire x1="251.46" y1="-53.34" x2="231.14" y2="-53.34" width="0.1524" layer="91"/>
-<label x="231.14" y="-53.34" size="1.778" layer="95"/>
+<wire x1="226.06" y1="5.08" x2="205.74" y2="5.08" width="0.1524" layer="91"/>
+<label x="205.74" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6798,6 +6793,83 @@ D = Direct mounting &lt;p&gt;
 <label x="86.36" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="FANS_SWITCH_ALL" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_3"/>
+<wire x1="71.12" y1="22.86" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<label x="86.36" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_11(D5/SPI4_SSEL/PWM1/2)"/>
+<wire x1="71.12" y1="2.54" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
+<label x="86.36" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_12(SPI4_SCLK/PWM1/3)"/>
+<wire x1="71.12" y1="0" x2="91.44" y2="0" width="0.1524" layer="91"/>
+<label x="86.36" y="0" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE_14(SPI4_MOSI/PWM1/4)"/>
+<wire x1="71.12" y1="-5.08" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
+<label x="86.36" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FCTEMP_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_3(A3/ANALOGIN)"/>
+<wire x1="71.12" y1="-15.24" x2="91.44" y2="-15.24" width="0.1524" layer="91"/>
+<label x="86.36" y="-15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FCTEMP_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_4(ANALOGIN)"/>
+<wire x1="71.12" y1="-17.78" x2="91.44" y2="-17.78" width="0.1524" layer="91"/>
+<label x="86.36" y="-17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TEMP_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_5(A4/ANALOGIN)"/>
+<wire x1="71.12" y1="-20.32" x2="91.44" y2="-20.32" width="0.1524" layer="91"/>
+<label x="86.36" y="-20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TEMP_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_7(PWM11/1/ANALOGIN/SERIAL7_TX/SPI5_SCLK)"/>
+<wire x1="71.12" y1="-22.86" x2="91.44" y2="-22.86" width="0.1524" layer="91"/>
+<label x="86.36" y="-22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TEMP_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_8(PWM13/1/ANALOGIN/SERIAL7_RTS/SPI5_MISO)"/>
+<wire x1="71.12" y1="-25.4" x2="91.44" y2="-25.4" width="0.1524" layer="91"/>
+<label x="86.36" y="-25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TEMP_4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_9(PWM14/1/ANALOGIN/SERIAL7_CTS/SPI5_MOSI)"/>
+<wire x1="71.12" y1="-27.94" x2="91.44" y2="-27.94" width="0.1524" layer="91"/>
+<label x="86.36" y="-27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TEMP_5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_10(A5/ANALOGIN)"/>
+<wire x1="71.12" y1="-30.48" x2="91.44" y2="-30.48" width="0.1524" layer="91"/>
+<label x="86.36" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6814,10 +6886,9 @@ D = Direct mounting &lt;p&gt;
 <text x="203.2" y="195.58" size="1.778" layer="94">Aux Power</text>
 <text x="-15.24" y="215.9" size="1.778" layer="94">ETHERNET CONNECTORS</text>
 <text x="99.06" y="215.9" size="1.778" layer="94">POWER CONNECTORS</text>
-<text x="20.32" y="-187.96" size="1.778" layer="94">Motor Controller</text>
-<wire x1="-15.24" y1="213.36" x2="-15.24" y2="-243.84" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="-243.84" x2="86.36" y2="-243.84" width="0.1524" layer="94"/>
-<wire x1="86.36" y1="-243.84" x2="86.36" y2="213.36" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="213.36" x2="-15.24" y2="-182.88" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="-182.88" x2="86.36" y2="-182.88" width="0.1524" layer="94"/>
+<wire x1="86.36" y1="-182.88" x2="86.36" y2="213.36" width="0.1524" layer="94"/>
 <wire x1="86.36" y1="213.36" x2="-15.24" y2="213.36" width="0.1524" layer="94"/>
 <wire x1="99.06" y1="213.36" x2="223.52" y2="213.36" width="0.1524" layer="94"/>
 <wire x1="223.52" y1="213.36" x2="223.52" y2="134.62" width="0.1524" layer="94"/>
@@ -6836,7 +6907,6 @@ D = Direct mounting &lt;p&gt;
 <instance part="ETH2" gate="G$1" x="20.32" y="127"/>
 <instance part="ETH3" gate="G$1" x="60.96" y="127"/>
 <instance part="ETH1" gate="G$1" x="20.32" y="182.88"/>
-<instance part="ETH10" gate="G$1" x="20.32" y="-213.36"/>
 </instances>
 <busses>
 </busses>
@@ -7140,14 +7210,6 @@ D = Direct mounting &lt;p&gt;
 <pinref part="ETH1" gate="G$1" pin="8"/>
 <wire x1="15.24" y1="180.34" x2="7.62" y2="180.34" width="0.1524" layer="91"/>
 <label x="2.54" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="15.24" y1="-228.6" x2="7.62" y2="-228.6" width="0.1524" layer="91"/>
-<label x="7.62" y="-236.22" size="1.778" layer="95"/>
-<wire x1="15.24" y1="-231.14" x2="7.62" y2="-231.14" width="0.1524" layer="91"/>
-<junction x="7.62" y="-231.14"/>
-<wire x1="7.62" y1="-228.6" x2="7.62" y2="-231.14" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-231.14" x2="7.62" y2="-236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FC5V" class="0">
@@ -7467,10 +7529,8 @@ D = Direct mounting &lt;p&gt;
 <text x="-7.62" y="83.82" size="1.778" layer="94">FANS</text>
 </plain>
 <instances>
-<instance part="U$3" gate="G$1" x="20.32" y="48.26"/>
+<instance part="U$3" gate="G$1" x="10.16" y="48.26"/>
 <instance part="U$4" gate="G$1" x="81.28" y="66.04"/>
-<instance part="U$5" gate="G$1" x="81.28" y="43.18"/>
-<instance part="U$6" gate="G$1" x="81.28" y="20.32"/>
 <instance part="U$7" gate="G$1" x="134.62" y="58.42"/>
 <instance part="U$8" gate="G$1" x="134.62" y="30.48"/>
 <instance part="U$9" gate="G$1" x="134.62" y="5.08"/>
@@ -7481,19 +7541,28 @@ D = Direct mounting &lt;p&gt;
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<label x="104.14" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FANS_SWITCH_ALL" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="ANODE"/>
+<wire x1="66.04" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+<label x="35.56" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="CATHODE"/>
+<wire x1="66.04" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<label x="35.56" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U$6" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VCC"/>
+<wire x1="96.52" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
