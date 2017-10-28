@@ -6838,25 +6838,11 @@ D = Direct mounting &lt;p&gt;
 <label x="86.36" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="OE*"/>
-<wire x1="-35.56" y1="-88.9" x2="-20.32" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-25.4" y="-88.9" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FCC_RELAY" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="B1"/>
 <wire x1="-35.56" y1="-93.98" x2="-20.32" y2="-93.98" width="0.1524" layer="91"/>
 <label x="-25.4" y="-93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="A8"/>
-<wire x1="-60.96" y1="-124.46" x2="-83.82" y2="-124.46" width="0.1524" layer="91"/>
-<label x="-83.82" y="-124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAP_RELAY" class="0">
@@ -6899,13 +6885,6 @@ D = Direct mounting &lt;p&gt;
 <pinref part="U$5" gate="G$1" pin="B7"/>
 <wire x1="-35.56" y1="-124.46" x2="-20.32" y2="-124.46" width="0.1524" layer="91"/>
 <label x="-25.4" y="-124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="B8"/>
-<wire x1="-35.56" y1="-129.54" x2="-20.32" y2="-129.54" width="0.1524" layer="91"/>
-<label x="-25.4" y="-129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="_FCC_RELAY" class="0">
