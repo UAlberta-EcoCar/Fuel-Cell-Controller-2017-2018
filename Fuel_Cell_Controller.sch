@@ -6917,7 +6917,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND1" library="E-P-008-R1.2" deviceset="GND" device=""/>
 <part name="ETH8" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="ETH6" library="ETHERNET" deviceset="ETHERNET" device=""/>
-<part name="ETH5" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="ETH4" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="ETH2" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="ETH3" library="ETHERNET" deviceset="ETHERNET" device=""/>
@@ -6961,6 +6960,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$17" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="470Ω"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10kΩ"/>
+<part name="X1" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F09" device="HP" package3d_urn="urn:adsk.eagle:package:10232/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -6994,6 +6994,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="215.9" y="-25.4" size="3.81" layer="94">TEMP/HUMID SENSOR</text>
 <wire x1="210.82" y1="-96.52" x2="281.94" y2="-96.52" width="0.1524" layer="94"/>
 <wire x1="281.94" y1="-96.52" x2="281.94" y2="-15.24" width="0.1524" layer="94"/>
+<text x="271.78" y="68.58" size="3.81" layer="94">RS232 TO MASS FLOW METER</text>
+<wire x1="264.16" y1="78.74" x2="360.68" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="360.68" y1="78.74" x2="360.68" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="360.68" y1="33.02" x2="281.94" y2="33.02" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -7016,16 +7020,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R1" gate="G$1" x="-78.74" y="-81.28"/>
 <instance part="U$3" gate="G$1" x="45.72" y="-106.68"/>
 <instance part="R2" gate="G$1" x="17.78" y="-81.28"/>
+<instance part="X1" gate="G$1" x="299.72" y="50.8"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="-71.12" y1="33.02" x2="-99.06" y2="33.02" width="0.1524" layer="91"/>
-<label x="-99.06" y="33.02" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="162.56" y1="40.64" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
@@ -7040,11 +7040,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="J1" gate="G$1" pin="GND"/>
 <wire x1="160.02" y1="5.08" x2="172.72" y2="5.08" width="0.1524" layer="91"/>
 <label x="167.64" y="5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="AGND"/>
-<wire x1="-71.12" y1="35.56" x2="-99.06" y2="35.56" width="0.1524" layer="91"/>
-<label x="-99.06" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -7090,6 +7085,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="33.02" y1="-129.54" x2="22.86" y2="-129.54" width="0.1524" layer="91"/>
 <label x="22.86" y="-129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="5"/>
+<wire x1="292.1" y1="45.72" x2="274.32" y2="45.72" width="0.1524" layer="91"/>
+<label x="274.32" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="-71.12" y1="33.02" x2="-99.06" y2="33.02" width="0.1524" layer="91"/>
+<label x="-99.06" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7226,6 +7231,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U$1" gate="G$1" pin="VIN"/>
 <wire x1="-71.12" y1="58.42" x2="-99.06" y2="58.42" width="0.1524" layer="91"/>
 <label x="-99.06" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="4"/>
+<wire x1="292.1" y1="48.26" x2="274.32" y2="48.26" width="0.1524" layer="91"/>
+<label x="274.32" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7822,6 +7832,25 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="66.04" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="AGND" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="292.1" y1="53.34" x2="274.32" y2="53.34" width="0.1524" layer="91"/>
+<label x="274.32" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="AGND"/>
+<wire x1="-71.12" y1="35.56" x2="-99.06" y2="35.56" width="0.1524" layer="91"/>
+<label x="-99.06" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MASS_FLOW" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="3"/>
+<wire x1="292.1" y1="50.8" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
+<label x="274.32" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -7830,17 +7859,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="20.32" y="205.74" size="1.778" layer="94">Pressure Gauges</text>
 <text x="20.32" y="149.86" size="1.778" layer="94">Relay Board</text>
 <text x="20.32" y="93.98" size="1.778" layer="94">Temperature Sensors</text>
-<text x="20.32" y="38.1" size="1.778" layer="94">Mass Flow Connector</text>
-<text x="20.32" y="-17.78" size="1.778" layer="94">H2 Okay + Estop</text>
-<text x="20.32" y="-73.66" size="1.778" layer="94">Fans</text>
-<text x="20.32" y="-129.54" size="1.778" layer="94">Valves</text>
+<text x="20.32" y="38.1" size="1.778" layer="94">H2 Okay + Estop</text>
+<text x="20.32" y="-17.78" size="1.778" layer="94">Fans</text>
+<text x="20.32" y="-73.66" size="1.778" layer="94">Valves</text>
 <text x="144.78" y="195.58" size="1.778" layer="94">FC Power</text>
 <text x="203.2" y="195.58" size="1.778" layer="94">Aux Power</text>
 <text x="-15.24" y="215.9" size="1.778" layer="94">ETHERNET CONNECTORS</text>
 <text x="99.06" y="215.9" size="1.778" layer="94">POWER CONNECTORS</text>
-<wire x1="-15.24" y1="213.36" x2="-15.24" y2="-182.88" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="-182.88" x2="86.36" y2="-182.88" width="0.1524" layer="94"/>
-<wire x1="86.36" y1="-182.88" x2="86.36" y2="213.36" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="213.36" x2="-15.24" y2="-127" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="-127" x2="86.36" y2="-127" width="0.1524" layer="94"/>
+<wire x1="86.36" y1="-127" x2="86.36" y2="213.36" width="0.1524" layer="94"/>
 <wire x1="86.36" y1="213.36" x2="-15.24" y2="213.36" width="0.1524" layer="94"/>
 <wire x1="99.06" y1="213.36" x2="223.52" y2="213.36" width="0.1524" layer="94"/>
 <wire x1="223.52" y1="213.36" x2="223.52" y2="134.62" width="0.1524" layer="94"/>
@@ -7848,13 +7876,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="99.06" y1="134.62" x2="99.06" y2="213.36" width="0.1524" layer="94"/>
 </plain>
 <instances>
-<instance part="ETH7" gate="G$1" x="20.32" y="-96.52"/>
-<instance part="ETH9" gate="G$1" x="20.32" y="-152.4"/>
+<instance part="ETH7" gate="G$1" x="20.32" y="-40.64"/>
+<instance part="ETH9" gate="G$1" x="20.32" y="-96.52"/>
 <instance part="FC_PWR" gate="G$1" x="147.32" y="175.26"/>
 <instance part="AUX_PWR" gate="G$1" x="205.74" y="175.26"/>
-<instance part="ETH8" gate="G$1" x="60.96" y="-96.52"/>
-<instance part="ETH6" gate="G$1" x="20.32" y="-40.64"/>
-<instance part="ETH5" gate="G$1" x="20.32" y="15.24"/>
+<instance part="ETH8" gate="G$1" x="60.96" y="-40.64"/>
+<instance part="ETH6" gate="G$1" x="20.32" y="15.24"/>
 <instance part="ETH4" gate="G$1" x="20.32" y="71.12"/>
 <instance part="ETH2" gate="G$1" x="20.32" y="127"/>
 <instance part="ETH3" gate="G$1" x="60.96" y="127"/>
@@ -7877,11 +7904,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="121.92" y="198.12" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="ETH5" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
-<label x="0" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="ETH1" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="198.12" x2="7.62" y2="198.12" width="0.1524" layer="91"/>
 <label x="0" y="198.12" size="1.778" layer="95"/>
@@ -7890,22 +7912,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="PURGE_VALVE_ENET" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="3"/>
-<wire x1="15.24" y1="-142.24" x2="7.62" y2="-142.24" width="0.1524" layer="91"/>
-<label x="-10.16" y="-142.24" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-86.36" x2="7.62" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-10.16" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTPUT_1_ENET" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="5"/>
-<wire x1="15.24" y1="-147.32" x2="7.62" y2="-147.32" width="0.1524" layer="91"/>
-<label x="-10.16" y="-147.32" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-91.44" x2="7.62" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-10.16" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTPUT_2_ENET" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="7"/>
-<wire x1="15.24" y1="-152.4" x2="7.62" y2="-152.4" width="0.1524" layer="91"/>
-<label x="-10.16" y="-152.4" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-96.52" x2="7.62" y2="-96.52" width="0.1524" layer="91"/>
+<label x="-10.16" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUX12V" class="0">
@@ -7959,23 +7981,23 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="ETH9" gate="G$1" pin="SHD1"/>
-<wire x1="15.24" y1="-167.64" x2="7.62" y2="-167.64" width="0.1524" layer="91"/>
-<label x="7.62" y="-175.26" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-111.76" x2="7.62" y2="-111.76" width="0.1524" layer="91"/>
+<label x="7.62" y="-119.38" size="1.778" layer="95"/>
 <pinref part="ETH9" gate="G$1" pin="SHD2"/>
-<wire x1="15.24" y1="-170.18" x2="7.62" y2="-170.18" width="0.1524" layer="91"/>
-<junction x="7.62" y="-170.18"/>
-<wire x1="7.62" y1="-167.64" x2="7.62" y2="-170.18" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-170.18" x2="7.62" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-114.3" x2="7.62" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="7.62" y="-114.3"/>
+<wire x1="7.62" y1="-111.76" x2="7.62" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-114.3" x2="7.62" y2="-119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ETH7" gate="G$1" pin="SHD1"/>
-<wire x1="15.24" y1="-111.76" x2="7.62" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-111.76" x2="7.62" y2="-114.3" width="0.1524" layer="91"/>
-<label x="7.62" y="-119.38" size="1.778" layer="95"/>
-<junction x="7.62" y="-114.3"/>
-<wire x1="7.62" y1="-114.3" x2="7.62" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-55.88" x2="7.62" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-55.88" x2="7.62" y2="-58.42" width="0.1524" layer="91"/>
+<label x="7.62" y="-63.5" size="1.778" layer="95"/>
+<junction x="7.62" y="-58.42"/>
+<wire x1="7.62" y1="-58.42" x2="7.62" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="ETH7" gate="G$1" pin="SHD2"/>
-<wire x1="15.24" y1="-114.3" x2="7.62" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-58.42" x2="7.62" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FC_PWR" gate="G$1" pin="1"/>
@@ -8003,53 +8025,43 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="ETH9" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="-139.7" x2="7.62" y2="-139.7" width="0.1524" layer="91"/>
-<label x="2.54" y="-139.7" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-83.82" x2="7.62" y2="-83.82" width="0.1524" layer="91"/>
+<label x="2.54" y="-83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH9" gate="G$1" pin="4"/>
-<wire x1="15.24" y1="-144.78" x2="7.62" y2="-144.78" width="0.1524" layer="91"/>
-<label x="2.54" y="-144.78" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-88.9" x2="7.62" y2="-88.9" width="0.1524" layer="91"/>
+<label x="2.54" y="-88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH9" gate="G$1" pin="6"/>
-<wire x1="15.24" y1="-149.86" x2="7.62" y2="-149.86" width="0.1524" layer="91"/>
-<label x="2.54" y="-149.86" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-93.98" x2="7.62" y2="-93.98" width="0.1524" layer="91"/>
+<label x="2.54" y="-93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH9" gate="G$1" pin="8"/>
-<wire x1="15.24" y1="-154.94" x2="7.62" y2="-154.94" width="0.1524" layer="91"/>
-<label x="2.54" y="-154.94" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-99.06" x2="7.62" y2="-99.06" width="0.1524" layer="91"/>
+<label x="2.54" y="-99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH8" gate="G$1" pin="SHD1"/>
-<wire x1="55.88" y1="-111.76" x2="48.26" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-111.76" x2="48.26" y2="-114.3" width="0.1524" layer="91"/>
-<label x="48.26" y="-119.38" size="1.778" layer="95"/>
-<junction x="48.26" y="-114.3"/>
-<wire x1="48.26" y1="-114.3" x2="48.26" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-55.88" x2="48.26" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-55.88" x2="48.26" y2="-58.42" width="0.1524" layer="91"/>
+<label x="48.26" y="-63.5" size="1.778" layer="95"/>
+<junction x="48.26" y="-58.42"/>
+<wire x1="48.26" y1="-58.42" x2="48.26" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="ETH8" gate="G$1" pin="SHD2"/>
-<wire x1="55.88" y1="-114.3" x2="48.26" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-58.42" x2="48.26" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ETH6" gate="G$1" pin="SHD1"/>
-<wire x1="15.24" y1="-55.88" x2="7.62" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-55.88" x2="7.62" y2="-58.42" width="0.1524" layer="91"/>
-<label x="7.62" y="-63.5" size="1.778" layer="95"/>
-<junction x="7.62" y="-58.42"/>
-<wire x1="7.62" y1="-58.42" x2="7.62" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="ETH6" gate="G$1" pin="SHD2"/>
-<wire x1="7.62" y1="-58.42" x2="15.24" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ETH5" gate="G$1" pin="SHD1"/>
 <wire x1="15.24" y1="0" x2="7.62" y2="0" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
 <label x="7.62" y="-7.62" size="1.778" layer="95"/>
 <junction x="7.62" y="-2.54"/>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="ETH5" gate="G$1" pin="SHD2"/>
-<wire x1="15.24" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="ETH6" gate="G$1" pin="SHD2"/>
+<wire x1="7.62" y1="-2.54" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ETH4" gate="G$1" pin="SHD1"/>
@@ -8093,43 +8105,33 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="ETH7" gate="G$1" pin="8"/>
-<wire x1="15.24" y1="-99.06" x2="7.62" y2="-99.06" width="0.1524" layer="91"/>
-<label x="0" y="-99.06" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-43.18" x2="7.62" y2="-43.18" width="0.1524" layer="91"/>
+<label x="0" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH8" gate="G$1" pin="8"/>
-<wire x1="55.88" y1="-99.06" x2="48.26" y2="-99.06" width="0.1524" layer="91"/>
-<label x="43.18" y="-99.06" size="1.778" layer="95"/>
+<wire x1="55.88" y1="-43.18" x2="48.26" y2="-43.18" width="0.1524" layer="91"/>
+<label x="43.18" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH6" gate="G$1" pin="5"/>
-<wire x1="15.24" y1="-35.56" x2="7.62" y2="-35.56" width="0.1524" layer="91"/>
-<label x="2.54" y="-35.56" size="1.778" layer="95"/>
+<wire x1="15.24" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
+<label x="2.54" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH6" gate="G$1" pin="6"/>
-<wire x1="15.24" y1="-38.1" x2="7.62" y2="-38.1" width="0.1524" layer="91"/>
-<label x="2.54" y="-38.1" size="1.778" layer="95"/>
+<wire x1="15.24" y1="17.78" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
+<label x="2.54" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH6" gate="G$1" pin="7"/>
-<wire x1="15.24" y1="-40.64" x2="7.62" y2="-40.64" width="0.1524" layer="91"/>
-<label x="2.54" y="-40.64" size="1.778" layer="95"/>
+<wire x1="15.24" y1="15.24" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
+<label x="2.54" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH6" gate="G$1" pin="8"/>
-<wire x1="15.24" y1="-43.18" x2="7.62" y2="-43.18" width="0.1524" layer="91"/>
-<label x="2.54" y="-43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ETH5" gate="G$1" pin="8"/>
 <wire x1="15.24" y1="12.7" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
 <label x="2.54" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ETH4" gate="G$1" pin="8"/>
-<wire x1="15.24" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
-<label x="2.54" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ETH2" gate="G$1" pin="6"/>
@@ -8184,128 +8186,92 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="FAN1_PWR" class="0">
 <segment>
 <pinref part="ETH7" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="-81.28" x2="7.62" y2="-81.28" width="0.1524" layer="91"/>
-<label x="0" y="-81.28" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-25.4" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
+<label x="0" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TACH_1" class="0">
 <segment>
 <pinref part="ETH7" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="-83.82" x2="7.62" y2="-83.82" width="0.1524" layer="91"/>
-<label x="0" y="-83.82" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-27.94" x2="7.62" y2="-27.94" width="0.1524" layer="91"/>
+<label x="0" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM_1" class="0">
 <segment>
 <pinref part="ETH7" gate="G$1" pin="3"/>
-<wire x1="15.24" y1="-86.36" x2="7.62" y2="-86.36" width="0.1524" layer="91"/>
-<label x="0" y="-86.36" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-30.48" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
+<label x="0" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FAN2_PWR" class="0">
 <segment>
 <pinref part="ETH7" gate="G$1" pin="4"/>
-<wire x1="15.24" y1="-88.9" x2="7.62" y2="-88.9" width="0.1524" layer="91"/>
-<label x="0" y="-88.9" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-33.02" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
+<label x="0" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TACH_2" class="0">
 <segment>
 <pinref part="ETH7" gate="G$1" pin="5"/>
-<wire x1="15.24" y1="-91.44" x2="7.62" y2="-91.44" width="0.1524" layer="91"/>
-<label x="0" y="-91.44" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-35.56" x2="7.62" y2="-35.56" width="0.1524" layer="91"/>
+<label x="0" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM_2" class="0">
 <segment>
 <pinref part="ETH7" gate="G$1" pin="6"/>
-<wire x1="15.24" y1="-93.98" x2="7.62" y2="-93.98" width="0.1524" layer="91"/>
-<label x="0" y="-93.98" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-38.1" x2="7.62" y2="-38.1" width="0.1524" layer="91"/>
+<label x="0" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FAN3_PWR" class="0">
 <segment>
 <pinref part="ETH8" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="-81.28" x2="48.26" y2="-81.28" width="0.1524" layer="91"/>
-<label x="40.64" y="-81.28" size="1.778" layer="95"/>
+<wire x1="55.88" y1="-25.4" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
+<label x="40.64" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TACH_3" class="0">
 <segment>
 <pinref part="ETH8" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="-83.82" x2="48.26" y2="-83.82" width="0.1524" layer="91"/>
-<label x="40.64" y="-83.82" size="1.778" layer="95"/>
+<wire x1="55.88" y1="-27.94" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
+<label x="40.64" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM_3" class="0">
 <segment>
 <pinref part="ETH8" gate="G$1" pin="3"/>
-<wire x1="55.88" y1="-86.36" x2="48.26" y2="-86.36" width="0.1524" layer="91"/>
-<label x="40.64" y="-86.36" size="1.778" layer="95"/>
+<wire x1="55.88" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
+<label x="40.64" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="STOP" class="0">
 <segment>
 <pinref part="ETH6" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="-25.4" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
-<label x="0" y="-25.4" size="1.778" layer="95"/>
+<wire x1="15.24" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
+<label x="0" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="H2_OK" class="0">
 <segment>
 <pinref part="ETH6" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="-27.94" x2="7.62" y2="-27.94" width="0.1524" layer="91"/>
-<label x="0" y="-27.94" size="1.778" layer="95"/>
+<wire x1="15.24" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
+<label x="0" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESTOP_1" class="0">
 <segment>
 <pinref part="ETH6" gate="G$1" pin="3"/>
-<wire x1="15.24" y1="-30.48" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
-<label x="0" y="-30.48" size="1.778" layer="95"/>
+<wire x1="15.24" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+<label x="0" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESTOP_2" class="0">
 <segment>
 <pinref part="ETH6" gate="G$1" pin="4"/>
-<wire x1="15.24" y1="-33.02" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
-<label x="0" y="-33.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="ETH5" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$62" class="0">
-<segment>
-<pinref part="ETH5" gate="G$1" pin="3"/>
-<wire x1="15.24" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$63" class="0">
-<segment>
-<pinref part="ETH5" gate="G$1" pin="4"/>
 <wire x1="15.24" y1="22.86" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$64" class="0">
-<segment>
-<pinref part="ETH5" gate="G$1" pin="5"/>
-<wire x1="15.24" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$65" class="0">
-<segment>
-<pinref part="ETH5" gate="G$1" pin="7"/>
-<wire x1="15.24" y1="15.24" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$66" class="0">
-<segment>
-<pinref part="ETH5" gate="G$1" pin="6"/>
-<wire x1="15.24" y1="17.78" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
+<label x="0" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FCTEMP_1" class="0">
@@ -8448,10 +8414,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="-5.08" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$96" class="0">
+<net name="AGND" class="0">
 <segment>
 <pinref part="ETH1" gate="G$1" pin="7"/>
 <wire x1="15.24" y1="182.88" x2="7.62" y2="182.88" width="0.1524" layer="91"/>
+<label x="2.54" y="182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ETH4" gate="G$1" pin="8"/>
+<wire x1="15.24" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<label x="2.54" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -8470,8 +8442,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="SUPPLY_VALVE_ENET" class="0">
 <segment>
 <pinref part="ETH9" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="-137.16" x2="7.62" y2="-137.16" width="0.1524" layer="91"/>
-<label x="-10.16" y="-137.16" size="1.778" layer="95"/>
+<wire x1="15.24" y1="-81.28" x2="7.62" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-10.16" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
