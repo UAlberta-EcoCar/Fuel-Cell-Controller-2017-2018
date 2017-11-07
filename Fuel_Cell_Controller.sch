@@ -5499,6 +5499,10 @@ HOLES</text>
 <text x="287.02" y="-193.04" size="1.778" layer="94">RGB - Red - Shutdown
 Blue - Start
 Green - Run</text>
+<text x="81.28" y="-228.6" size="1.778" layer="94">Double check these</text>
+<text x="391.16" y="-7.62" size="1.778" layer="94">Screw Terminal</text>
+<text x="269.24" y="38.1" size="1.778" layer="94">Add voltage divder to halve voltage before attaching to uC</text>
+<text x="284.48" y="-200.66" size="1.778" layer="94">Debug -Yellow</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="-5.08"/>
