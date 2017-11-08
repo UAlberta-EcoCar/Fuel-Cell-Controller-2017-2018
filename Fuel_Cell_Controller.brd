@@ -1461,6 +1461,8 @@ design rules under a new name.</description>
 <element name="U$24" library="FCC_parts" package="DMP3056L-7" value="DMP3056L-7DMP3056L-7" x="-26.67" y="-127"/>
 <element name="R16" library="SparkFun-Passives" package="0805" value="10kΩ" x="-26.67" y="-138.43"/>
 <element name="R17" library="SparkFun-Passives" package="0805" value="10kΩ" x="-33.02" y="-138.43"/>
+<element name="D2" library="SparkFun-LED" package="LED-1206" value="YELLOW" x="-31.75" y="-143.51"/>
+<element name="R18" library="SparkFun-Passives" package="0805" value="324Ω" x="-33.02" y="-148.59"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1589,6 +1591,7 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="12"/>
 <contactref element="U$3" pad="11"/>
 <contactref element="R17" pad="1"/>
+<contactref element="D2" pad="C"/>
 <wire x1="107.0864" y1="147.32" x2="113.03" y2="139.7" width="0" layer="19" extent="1-1"/>
 <wire x1="107.95" y1="129.17" x2="113.03" y2="139.7" width="0" layer="19" extent="1-1"/>
 <wire x1="114.3" y1="116.84" x2="107.95" y2="129.17" width="0" layer="19" extent="1-1"/>
@@ -1707,6 +1710,7 @@ design rules under a new name.</description>
 <wire x1="-25.77" y1="-95.25" x2="-25.82" y2="-83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.77" y1="-99.06" x2="-25.77" y2="-95.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.92" y1="-138.43" x2="-25.77" y2="-99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="-143.51" x2="-33.92" y2="-138.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$1" pad="5V"/>
@@ -1762,7 +1766,6 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="6"/>
 <contactref element="U$20" pad="VDD"/>
 <contactref element="C6" pad="1"/>
-<contactref element="R13" pad="1"/>
 <contactref element="U$24" pad="D"/>
 <contactref element="R16" pad="1"/>
 <wire x1="113.03" y1="90.17" x2="138.43" y2="91.44" width="0" layer="19" extent="1-1"/>
@@ -1770,8 +1773,7 @@ design rules under a new name.</description>
 <wire x1="95.25" y1="111.76" x2="105.41" y2="96.52" width="0" layer="19" extent="1-1"/>
 <wire x1="82.55" y1="116.84" x2="95.25" y2="111.76" width="0" layer="19" extent="1-1"/>
 <wire x1="16.51" y1="85.730715625" x2="82.55" y2="116.84" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.68" y1="-27.94" x2="16.51" y2="85.730715625" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.1" y1="-44.72" x2="-18.68" y2="-27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.1" y1="-44.72" x2="16.51" y2="85.730715625" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.52" y1="-66.04" x2="-18.1" y2="-44.72" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.67" y1="-126" x2="-27.52" y2="-66.04" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.57" y1="-138.43" x2="-26.67" y2="-126" width="0" layer="19" extent="1-1"/>
@@ -2376,13 +2378,17 @@ design rules under a new name.</description>
 <contactref element="D1" pad="A"/>
 <wire x1="-20.55" y1="-24.13" x2="-16.88" y2="-27.94" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="RUN_MODE">
+<signal name="ALARM_LED">
 <contactref element="U$1" pad="PG_0"/>
+<contactref element="R13" pad="1"/>
+<wire x1="-18.68" y1="-27.94" x2="16.51" y2="34.930715625" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$19">
+<signal name="DEBUG_LED">
 <contactref element="U$1" pad="PG_1"/>
+<contactref element="R18" pad="1"/>
+<wire x1="19.05" y1="34.930715625" x2="-33.92" y2="-148.59" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$20">
+<signal name="SHUT_LED">
 <contactref element="U$1" pad="PG_2"/>
 </signal>
 <signal name="OE*">
@@ -2398,13 +2404,21 @@ design rules under a new name.</description>
 <wire x1="-25.72" y1="-128" x2="-27.57" y2="-91.44" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.12" y1="-138.43" x2="-25.72" y2="-128" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DEBUG_MODE">
+<signal name="START_LED">
 <contactref element="U$1" pad="PG_3"/>
 </signal>
 <signal name="INTERRUPT">
 <contactref element="U$1" pad="PH_0"/>
 <contactref element="U$1" pad="PH_1"/>
 <wire x1="16.51" y1="45.090715625" x2="16.51" y2="47.630715625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RUN_LED">
+<contactref element="U$1" pad="PG_9"/>
+</signal>
+<signal name="N$17">
+<contactref element="R18" pad="2"/>
+<contactref element="D2" pad="A"/>
+<wire x1="-33.25" y1="-143.51" x2="-32.12" y2="-148.59" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

@@ -3,7 +3,7 @@
 <eagle version="8.4.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -5416,6 +5416,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U$24" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED" device="1206" value="YELLOW"/>
+<part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="324Ω"/>
 </parts>
 <sheets>
 <sheet>
@@ -5464,7 +5466,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-93.98" y1="78.74" x2="-93.98" y2="-78.74" width="0.1524" layer="94"/>
 <wire x1="-93.98" y1="-78.74" x2="-93.98" y2="-208.28" width="0.1524" layer="94"/>
 <wire x1="-93.98" y1="-208.28" x2="124.46" y2="-208.28" width="0.1524" layer="94"/>
-<wire x1="124.46" y1="-208.28" x2="124.46" y2="-96.52" width="0.1524" layer="94"/>
+<wire x1="124.46" y1="-208.28" x2="124.46" y2="-180.34" width="0.1524" layer="94"/>
+<wire x1="124.46" y1="-180.34" x2="124.46" y2="-96.52" width="0.1524" layer="94"/>
 <wire x1="-93.98" y1="-78.74" x2="124.46" y2="-78.74" width="0.1524" layer="94"/>
 <text x="-10.16" y="-88.9" size="3.81" layer="94">OUTPUT BUFFERS</text>
 <text x="297.18" y="-45.72" size="3.81" layer="94">12-bit Adafruit ADC</text>
@@ -5483,26 +5486,26 @@ HOLES</text>
 <wire x1="124.46" y1="-180.34" x2="256.54" y2="-180.34" width="0.1524" layer="94"/>
 <wire x1="256.54" y1="-180.34" x2="256.54" y2="-96.52" width="0.1524" layer="94"/>
 <text x="287.02" y="-147.32" size="3.81" layer="94">Indicator LED's</text>
-<wire x1="256.54" y1="-180.34" x2="360.68" y2="-180.34" width="0.1524" layer="94"/>
-<wire x1="360.68" y1="-180.34" x2="360.68" y2="-137.16" width="0.1524" layer="94"/>
+<wire x1="360.68" y1="-297.18" x2="360.68" y2="-137.16" width="0.1524" layer="94"/>
 <wire x1="-93.98" y1="-208.28" x2="-93.98" y2="-259.08" width="0.1524" layer="94"/>
 <wire x1="-93.98" y1="-259.08" x2="124.46" y2="-259.08" width="0.1524" layer="94"/>
 <wire x1="124.46" y1="-259.08" x2="124.46" y2="-208.28" width="0.1524" layer="94"/>
 <text x="-10.16" y="-223.52" size="3.81" layer="94">TVS Surge Protection</text>
-<text x="284.48" y="-172.72" size="1.778" layer="94">Spec out an 1206 LED for this</text>
 <wire x1="360.68" y1="0" x2="482.6" y2="0" width="0.1524" layer="94"/>
 <wire x1="482.6" y1="0" x2="482.6" y2="78.74" width="0.1524" layer="94"/>
 <wire x1="482.6" y1="78.74" x2="360.68" y2="78.74" width="0.1524" layer="94"/>
 <text x="388.62" y="60.96" size="3.81" layer="94">DECOUPLING CAPACITORS</text>
-<text x="274.32" y="-160.02" size="1.778" layer="94">ALARM</text>
+<text x="269.24" y="-160.02" size="1.778" layer="94">ALARM</text>
 <text x="393.7" y="53.34" size="1.778" layer="94">Change to actual decoupling caps, not smd</text>
-<text x="287.02" y="-193.04" size="1.778" layer="94">RGB - Red - Shutdown
+<text x="289.56" y="-223.52" size="1.778" layer="94">RGB - Red - Shutdown
 Blue - Start
 Green - Run</text>
 <text x="81.28" y="-228.6" size="1.778" layer="94">Double check these</text>
 <text x="391.16" y="-7.62" size="1.778" layer="94">Screw Terminal</text>
 <text x="269.24" y="38.1" size="1.778" layer="94">Add voltage divder to halve voltage before attaching to uC</text>
-<text x="284.48" y="-200.66" size="1.778" layer="94">Debug -Yellow</text>
+<wire x1="360.68" y1="-297.18" x2="256.54" y2="-297.18" width="0.1524" layer="94"/>
+<wire x1="256.54" y1="-297.18" x2="256.54" y2="-180.34" width="0.1524" layer="94"/>
+<text x="269.24" y="-172.72" size="1.778" layer="94">DEBUG</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="-5.08"/>
@@ -5560,6 +5563,8 @@ Green - Run</text>
 <instance part="U$24" gate="G$1" x="-33.02" y="-180.34"/>
 <instance part="R16" gate="G$1" x="-33.02" y="-165.1"/>
 <instance part="R17" gate="G$1" x="-15.24" y="-193.04" rot="R90"/>
+<instance part="D2" gate="G$1" x="322.58" y="-172.72" rot="R90"/>
+<instance part="R18" gate="G$1" x="309.88" y="-172.72"/>
 </instances>
 <busses>
 </busses>
@@ -5806,6 +5811,11 @@ Green - Run</text>
 <wire x1="-15.24" y1="-198.12" x2="-15.24" y2="-203.2" width="0.1524" layer="91"/>
 <label x="-15.24" y="-203.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="327.66" y1="-172.72" x2="335.28" y2="-172.72" width="0.1524" layer="91"/>
+<label x="330.2" y="-172.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -5949,11 +5959,6 @@ Green - Run</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="383.54" y1="33.02" x2="383.54" y2="45.72" width="0.1524" layer="91"/>
 <label x="383.54" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="304.8" y1="-160.02" x2="297.18" y2="-160.02" width="0.1524" layer="91"/>
-<label x="297.18" y="-160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$24" gate="G$1" pin="DRAIN"/>
@@ -6767,21 +6772,31 @@ Green - Run</text>
 <wire x1="314.96" y1="-160.02" x2="320.04" y2="-160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RUN_MODE" class="0">
+<net name="ALARM_LED" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PG_0"/>
 <wire x1="88.9" y1="-50.8" x2="109.22" y2="-50.8" width="0.1524" layer="91"/>
 <label x="104.14" y="-50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="304.8" y1="-160.02" x2="287.02" y2="-160.02" width="0.1524" layer="91"/>
+<label x="287.02" y="-160.02" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="N$19" class="0">
+<net name="DEBUG_LED" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PG_1"/>
 <wire x1="88.9" y1="-53.34" x2="109.22" y2="-53.34" width="0.1524" layer="91"/>
 <label x="104.14" y="-53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="304.8" y1="-172.72" x2="287.02" y2="-172.72" width="0.1524" layer="91"/>
+<label x="287.02" y="-172.72" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="N$20" class="0">
+<net name="SHUT_LED" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PG_2"/>
 <wire x1="88.9" y1="-55.88" x2="109.22" y2="-55.88" width="0.1524" layer="91"/>
@@ -6811,7 +6826,7 @@ Green - Run</text>
 <label x="83.82" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DEBUG_MODE" class="0">
+<net name="START_LED" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PG_3"/>
 <wire x1="88.9" y1="-58.42" x2="109.22" y2="-58.42" width="0.1524" layer="91"/>
@@ -6826,6 +6841,20 @@ Green - Run</text>
 <pinref part="U$1" gate="G$1" pin="PH_1"/>
 <wire x1="88.9" y1="-71.12" x2="93.98" y2="-71.12" width="0.1524" layer="91"/>
 <label x="93.98" y="-71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RUN_LED" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PG_9(D0)"/>
+<wire x1="88.9" y1="-60.96" x2="109.22" y2="-60.96" width="0.1524" layer="91"/>
+<label x="104.14" y="-60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="314.96" y1="-172.72" x2="320.04" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
