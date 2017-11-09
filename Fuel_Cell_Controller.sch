@@ -5367,6 +5367,47 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 </devicesets>
 </library>
+<library name="EG4621CT-ND">
+<packages>
+<package name="EG4621CT-ND">
+<description>Surface mount push button digikey number: EG4621CT-ND</description>
+<smd name="P$1" x="-2.475" y="2.1" dx="1" dy="1" layer="1"/>
+<smd name="P$2" x="2.475" y="2.1" dx="1" dy="1" layer="1"/>
+<smd name="P$3" x="-2.475" y="-2.1" dx="1" dy="1" layer="1"/>
+<smd name="P$4" x="2.475" y="-2.1" dx="1" dy="1" layer="1"/>
+<wire x1="-3.175" y1="2.794" x2="-3.175" y2="-2.794" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-2.794" x2="3.175" y2="-2.794" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.794" x2="3.175" y2="2.794" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.794" x2="-3.175" y2="2.794" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BUTTON">
+<pin name="P$1" x="-7.62" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="EG4621CT-ND">
+<description>surface mount push putton digikey number EG4621CT-ND</description>
+<gates>
+<gate name="G$1" symbol="BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EG4621CT-ND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5478,6 +5519,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="X3" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F09" device="HP" package3d_urn="urn:adsk.eagle:package:10232/1"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1µF"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1µF"/>
+<part name="U$26" library="EG4621CT-ND" deviceset="EG4621CT-ND" device=""/>
+<part name="R24" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
 </parts>
 <sheets>
 <sheet>
@@ -5550,7 +5593,8 @@ HOLES</text>
 <wire x1="124.46" y1="-180.34" x2="256.54" y2="-180.34" width="0.1524" layer="94"/>
 <wire x1="256.54" y1="-180.34" x2="256.54" y2="-96.52" width="0.1524" layer="94"/>
 <text x="287.02" y="-147.32" size="3.81" layer="94">Indicator LED's</text>
-<wire x1="360.68" y1="-215.9" x2="360.68" y2="-137.16" width="0.1524" layer="94"/>
+<wire x1="360.68" y1="-215.9" x2="360.68" y2="-172.72" width="0.1524" layer="94"/>
+<wire x1="360.68" y1="-172.72" x2="360.68" y2="-137.16" width="0.1524" layer="94"/>
 <wire x1="-93.98" y1="-208.28" x2="-93.98" y2="-259.08" width="0.1524" layer="94"/>
 <wire x1="-93.98" y1="-259.08" x2="124.46" y2="-259.08" width="0.1524" layer="94"/>
 <wire x1="124.46" y1="-259.08" x2="124.46" y2="-208.28" width="0.1524" layer="94"/>
@@ -5573,6 +5617,9 @@ HOLES</text>
 <text x="378.46" y="-55.88" size="3.81" layer="94">BACKUP RS232 PORT</text>
 <wire x1="482.6" y1="-45.72" x2="482.6" y2="-127" width="0.1524" layer="94"/>
 <wire x1="482.6" y1="-127" x2="360.68" y2="-127" width="0.1524" layer="94"/>
+<text x="383.54" y="-137.16" size="3.81" layer="94">PUSH BUTTON (ACTIVE HIGH)</text>
+<wire x1="360.68" y1="-172.72" x2="482.6" y2="-172.72" width="0.1524" layer="94"/>
+<wire x1="482.6" y1="-172.72" x2="482.6" y2="-127" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="-5.08"/>
@@ -5643,6 +5690,8 @@ HOLES</text>
 <instance part="X3" gate="G$1" x="414.02" y="-78.74"/>
 <instance part="C7" gate="G$1" x="391.16" y="33.02"/>
 <instance part="C16" gate="G$1" x="375.92" y="33.02"/>
+<instance part="U$26" gate="G$1" x="408.94" y="-154.94"/>
+<instance part="R24" gate="G$1" x="411.48" y="-162.56"/>
 </instances>
 <busses>
 </busses>
@@ -5923,6 +5972,11 @@ HOLES</text>
 <wire x1="439.42" y1="-30.48" x2="452.12" y2="-30.48" width="0.1524" layer="91"/>
 <label x="447.04" y="-30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="406.4" y1="-162.56" x2="388.62" y2="-162.56" width="0.1524" layer="91"/>
+<label x="388.62" y="-162.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -6081,6 +6135,11 @@ HOLES</text>
 <junction x="-50.8" y="-180.34"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="-50.8" y1="-165.1" x2="-38.1" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$26" gate="G$1" pin="P$1"/>
+<wire x1="401.32" y1="-154.94" x2="388.62" y2="-154.94" width="0.1524" layer="91"/>
+<label x="388.62" y="-154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OPEN_RST" class="0">
@@ -7007,6 +7066,23 @@ HOLES</text>
 <pinref part="X1" gate="G$1" pin="3"/>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="337.82" y1="50.8" x2="312.42" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BUTTON" class="0">
+<segment>
+<pinref part="U$26" gate="G$1" pin="P$2"/>
+<label x="424.18" y="-154.94" size="1.778" layer="95"/>
+<wire x1="416.56" y1="-154.94" x2="419.1" y2="-154.94" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="419.1" y1="-154.94" x2="429.26" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="-154.94" x2="419.1" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="-162.56" x2="416.56" y2="-162.56" width="0.1524" layer="91"/>
+<junction x="419.1" y="-154.94"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF_2"/>
+<wire x1="88.9" y1="-17.78" x2="109.22" y2="-17.78" width="0.1524" layer="91"/>
+<label x="104.14" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
