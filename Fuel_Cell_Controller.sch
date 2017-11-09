@@ -5476,6 +5476,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
 <part name="R23" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="SCREW" package3d_urn="urn:adsk.eagle:package:38112/1"/>
+<part name="X3" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F09" device="HP" package3d_urn="urn:adsk.eagle:package:10232/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -5542,7 +5543,8 @@ or anything else</text>
 <text x="321.31" y="-132.08" size="1.778" layer="94">A3:</text>
 <text x="137.16" y="-137.16" size="3.81" layer="94">MOUNTING
 HOLES</text>
-<wire x1="360.68" y1="-137.16" x2="360.68" y2="-45.72" width="0.2032" layer="94"/>
+<wire x1="360.68" y1="-137.16" x2="360.68" y2="-127" width="0.2032" layer="94"/>
+<wire x1="360.68" y1="-127" x2="360.68" y2="-45.72" width="0.2032" layer="94"/>
 <wire x1="360.68" y1="-45.72" x2="360.68" y2="-33.02" width="0.2032" layer="94"/>
 <wire x1="124.46" y1="-180.34" x2="256.54" y2="-180.34" width="0.1524" layer="94"/>
 <wire x1="256.54" y1="-180.34" x2="256.54" y2="-96.52" width="0.1524" layer="94"/>
@@ -5560,7 +5562,6 @@ HOLES</text>
 <text x="393.7" y="53.34" size="1.778" layer="94">Change to actual decoupling caps, not smd</text>
 <text x="81.28" y="-228.6" size="1.778" layer="94">Double check these</text>
 <text x="386.08" y="-10.16" size="3.81" layer="94">Screw Terminals</text>
-<text x="269.24" y="38.1" size="1.778" layer="94">Add voltage divder to halve voltage before attaching to uC</text>
 <wire x1="360.68" y1="-215.9" x2="256.54" y2="-215.9" width="0.1524" layer="94"/>
 <wire x1="256.54" y1="-215.9" x2="256.54" y2="-180.34" width="0.1524" layer="94"/>
 <text x="274.32" y="-170.18" size="1.778" layer="94">DEBUG</text>
@@ -5569,6 +5570,9 @@ HOLES</text>
 <text x="264.16" y="-198.12" size="1.778" layer="94">STARTUP</text>
 <wire x1="360.68" y1="-45.72" x2="482.6" y2="-45.72" width="0.1524" layer="94"/>
 <wire x1="482.6" y1="-45.72" x2="482.6" y2="0" width="0.1524" layer="94"/>
+<text x="378.46" y="-55.88" size="3.81" layer="94">BACKUP RS232 PORT</text>
+<wire x1="482.6" y1="-45.72" x2="482.6" y2="-127" width="0.1524" layer="94"/>
+<wire x1="482.6" y1="-127" x2="360.68" y2="-127" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="-5.08"/>
@@ -5591,7 +5595,7 @@ HOLES</text>
 <instance part="R1" gate="G$1" x="-55.88" y="-99.06"/>
 <instance part="U$3" gate="G$1" x="68.58" y="-124.46"/>
 <instance part="R2" gate="G$1" x="40.64" y="-99.06"/>
-<instance part="X1" gate="G$1" x="347.98" y="53.34"/>
+<instance part="X1" gate="G$1" x="345.44" y="50.8"/>
 <instance part="U$18" gate="G$1" x="325.12" y="-5.08"/>
 <instance part="U$19" gate="G$1" x="317.5" y="-81.28"/>
 <instance part="JP2" gate="B" x="318.77" y="-99.06" rot="R90"/>
@@ -5634,9 +5638,10 @@ HOLES</text>
 <instance part="R20" gate="G$1" x="304.8" y="-193.04"/>
 <instance part="R21" gate="G$1" x="304.8" y="-198.12"/>
 <instance part="GND6" gate="1" x="424.18" y="5.08"/>
-<instance part="R22" gate="G$1" x="309.88" y="53.34"/>
-<instance part="R23" gate="G$1" x="289.56" y="53.34"/>
+<instance part="R22" gate="G$1" x="307.34" y="50.8"/>
+<instance part="R23" gate="G$1" x="287.02" y="50.8"/>
 <instance part="J3" gate="G$1" x="431.8" y="-25.4"/>
+<instance part="X3" gate="G$1" x="414.02" y="-78.74"/>
 </instances>
 <busses>
 </busses>
@@ -5704,8 +5709,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="5"/>
-<wire x1="340.36" y1="48.26" x2="322.58" y2="48.26" width="0.1524" layer="91"/>
-<label x="322.58" y="48.26" size="1.778" layer="95"/>
+<wire x1="337.82" y1="45.72" x2="320.04" y2="45.72" width="0.1524" layer="91"/>
+<label x="320.04" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -5758,8 +5763,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="340.36" y1="55.88" x2="322.58" y2="55.88" width="0.1524" layer="91"/>
-<label x="322.58" y="55.88" size="1.778" layer="95"/>
+<wire x1="337.82" y1="53.34" x2="320.04" y2="53.34" width="0.1524" layer="91"/>
+<label x="320.04" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
@@ -5905,8 +5910,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="284.48" y1="53.34" x2="271.78" y2="53.34" width="0.1524" layer="91"/>
-<label x="271.78" y="53.34" size="1.778" layer="95"/>
+<wire x1="281.94" y1="50.8" x2="269.24" y2="50.8" width="0.1524" layer="91"/>
+<label x="269.24" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
@@ -6112,8 +6117,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="4"/>
-<wire x1="340.36" y1="50.8" x2="322.58" y2="50.8" width="0.1524" layer="91"/>
-<label x="322.58" y="50.8" size="1.778" layer="95"/>
+<wire x1="337.82" y1="48.26" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
+<label x="320.04" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$22" gate="G$1" pin="C"/>
@@ -6975,11 +6980,11 @@ HOLES</text>
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="304.8" y1="53.34" x2="299.72" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="53.34" x2="294.64" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="53.34" x2="299.72" y2="45.72" width="0.1524" layer="91"/>
-<junction x="299.72" y="53.34"/>
-<label x="299.72" y="45.72" size="1.778" layer="95"/>
+<wire x1="302.26" y1="50.8" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="50.8" x2="292.1" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="50.8" x2="297.18" y2="43.18" width="0.1524" layer="91"/>
+<junction x="297.18" y="50.8"/>
+<label x="297.18" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$19" gate="G$1" pin="A0"/>
@@ -6991,7 +6996,7 @@ HOLES</text>
 <segment>
 <pinref part="X1" gate="G$1" pin="3"/>
 <pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="340.36" y1="53.34" x2="314.96" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="50.8" x2="312.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
