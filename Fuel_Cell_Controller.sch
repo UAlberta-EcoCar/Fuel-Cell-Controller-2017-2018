@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -70,7 +70,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -10084,6 +10084,17 @@ HOLES</text>
 <sheet>
 <description>FC LP FILTER</description>
 <plain>
+<wire x1="-25.4" y1="86.36" x2="-25.4" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-25.4" y1="7.62" x2="160.02" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="160.02" y1="7.62" x2="160.02" y2="86.36" width="0.1524" layer="94"/>
+<wire x1="160.02" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="94"/>
+<wire x1="83.82" y1="86.36" x2="-5.08" y2="86.36" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="86.36" x2="-25.4" y2="86.36" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="86.36" x2="-5.08" y2="134.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="134.62" x2="83.82" y2="134.62" width="0.1524" layer="94"/>
+<wire x1="83.82" y1="134.62" x2="83.82" y2="86.36" width="0.1524" layer="94"/>
+<text x="0" y="129.54" size="1.778" layer="94">Current Sensors LP Filter</text>
+<text x="-17.78" y="78.74" size="1.778" layer="94">Voltages LP Filter</text>
 </plain>
 <instances>
 <instance part="U$23" gate="G$1" x="60.96" y="48.26"/>
@@ -10113,7 +10124,7 @@ HOLES</text>
 <wire x1="60.96" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-<label x="68.58" y="109.22" size="1.778" layer="95"/>
+<label x="71.12" y="109.22" size="1.778" layer="95"/>
 <wire x1="68.58" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="96.52" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 <junction x="68.58" y="109.22"/>
