@@ -839,6 +839,7 @@ Temp/Humid</text>
 <text x="-7.62" y="25.4" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="DMP3056L-7">
+<description>This is a P-MOSFET</description>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
@@ -847,6 +848,7 @@ Temp/Humid</text>
 <pin name="GATE" x="12.7" y="5.08" length="middle" rot="R180"/>
 <pin name="SOURCE" x="12.7" y="-5.08" length="middle" rot="R180"/>
 <text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="94">P-MOSFET</text>
 </symbol>
 <symbol name="H11L1">
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
