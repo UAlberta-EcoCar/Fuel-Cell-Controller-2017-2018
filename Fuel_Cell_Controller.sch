@@ -2522,38 +2522,12 @@ D = Direct mounting &lt;p&gt;
 <rectangle x1="3.5052" y1="0.9652" x2="4.1148" y2="1.5748" layer="51"/>
 <rectangle x1="0.9652" y1="-1.5748" x2="1.5748" y2="-0.9652" layer="51"/>
 </package>
-<package name="JP1" urn="urn:adsk.eagle:footprint:15398/1" library_version="1">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<wire x1="-1.016" y1="0" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="0" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.254" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-2.54" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="2.286" x2="1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="2.54" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.286" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.286" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
-<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
-<text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
-<rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="JP2" urn="urn:adsk.eagle:package:15452/1" type="box" library_version="1">
 <description>JUMPER</description>
 </package3d>
 <package3d name="JP4Q" urn="urn:adsk.eagle:package:15451/1" type="box" library_version="1">
-<description>JUMPER</description>
-</package3d>
-<package3d name="JP1" urn="urn:adsk.eagle:package:15455/1" type="box" library_version="1">
 <description>JUMPER</description>
 </package3d>
 </packages3d>
@@ -2607,20 +2581,6 @@ D = Direct mounting &lt;p&gt;
 <pin name="7" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="8" x="5.08" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
-<symbol name="JP2E" urn="urn:adsk.eagle:symbol:15391/1" library_version="1">
-<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
-<text x="-1.27" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JP2E" urn="urn:adsk.eagle:component:15482/1" prefix="JP" uservalue="yes" library_version="1">
@@ -2663,26 +2623,6 @@ D = Direct mounting &lt;p&gt;
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15451/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JP1E" urn="urn:adsk.eagle:component:15487/1" prefix="JP" uservalue="yes" library_version="1">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="JP2E" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="JP1">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15455/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -13137,7 +13077,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND6" library="E-P-008-R1.2" deviceset="GND" device=""/>
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
 <part name="R23" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
-<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="SCREW" package3d_urn="urn:adsk.eagle:package:38112/1"/>
 <part name="X3" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F09" device="HP" package3d_urn="urn:adsk.eagle:package:10232/1"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1µF"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1µF"/>
@@ -13146,7 +13085,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U$27" library="100uF_Cap" deviceset="CAP-VS-SERIES-PACKAGE-E(ELECT)" device="VS-SERIES-PACKAGE-E" value="1µF"/>
 <part name="U$28" library="100uF_Cap" deviceset="CAP-VS-SERIES-PACKAGE-E(ELECT)" device="VS-SERIES-PACKAGE-E" value="1µF"/>
 <part name="U$29" library="100uF_Cap" deviceset="CAP-VS-SERIES-PACKAGE-E(ELECT)" device="VS-SERIES-PACKAGE-E" value="10µF"/>
-<part name="JP4" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="START" library="ETHERNET" deviceset="ETHERNET" device=""/>
 <part name="C17" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="C18" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
@@ -13347,7 +13285,6 @@ HOLES</text>
 <instance part="GND6" gate="1" x="424.18" y="10.16"/>
 <instance part="R22" gate="G$1" x="307.34" y="50.8"/>
 <instance part="R23" gate="G$1" x="287.02" y="50.8"/>
-<instance part="J3" gate="G$1" x="431.8" y="-25.4"/>
 <instance part="X3" gate="G$1" x="414.02" y="-78.74"/>
 <instance part="C7" gate="G$1" x="391.16" y="33.02"/>
 <instance part="C16" gate="G$1" x="375.92" y="33.02"/>
@@ -13356,7 +13293,6 @@ HOLES</text>
 <instance part="U$27" gate="G$1" x="398.78" y="35.56"/>
 <instance part="U$28" gate="G$1" x="421.64" y="35.56"/>
 <instance part="U$29" gate="G$1" x="474.98" y="35.56"/>
-<instance part="JP4" gate="A" x="421.64" y="-40.64" rot="R90"/>
 <instance part="U$30" gate="G$1" x="193.04" y="-228.6"/>
 <instance part="U$31" gate="G$1" x="0" y="-246.38"/>
 <instance part="C23" gate="G$1" x="490.22" y="33.02"/>
@@ -13615,11 +13551,6 @@ HOLES</text>
 <pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="281.94" y1="50.8" x2="269.24" y2="50.8" width="0.1524" layer="91"/>
 <label x="269.24" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="439.42" y1="-30.48" x2="452.12" y2="-30.48" width="0.1524" layer="91"/>
-<label x="447.04" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R24" gate="G$1" pin="1"/>
@@ -14650,24 +14581,7 @@ HOLES</text>
 <label x="104.14" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="START" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="439.42" y1="-20.32" x2="452.12" y2="-20.32" width="0.1524" layer="91"/>
-<label x="447.04" y="-20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="A" pin="2"/>
-<wire x1="424.18" y1="-38.1" x2="436.88" y2="-38.1" width="0.1524" layer="91"/>
-<label x="431.8" y="-38.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="_START" class="0">
-<segment>
-<pinref part="JP4" gate="A" pin="1"/>
-<wire x1="424.18" y1="-40.64" x2="436.88" y2="-40.64" width="0.1524" layer="91"/>
-<label x="431.8" y="-40.64" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PF_12(D8)"/>
 <wire x1="88.9" y1="-38.1" x2="109.22" y2="-38.1" width="0.1524" layer="91"/>
