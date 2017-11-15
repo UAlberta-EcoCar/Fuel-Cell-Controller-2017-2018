@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13063,7 +13063,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1µF"/>
 <part name="C15" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1µF"/>
 <part name="GND4" library="E-P-008-R1.2" deviceset="GND" device=""/>
-<part name="U$23" library="FCC_parts" deviceset="TLV2404" device="TLV2404"/>
+<part name="LP_FILTER_OP_AMP" library="FCC_parts" deviceset="TLV2404" device="TLV2404"/>
 <part name="U$24" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
@@ -14796,13 +14796,14 @@ HOLES</text>
 <plain>
 <text x="76.2" y="-132.08" size="1.778" layer="94">Pressure Gauges</text>
 <text x="60.96" y="38.1" size="1.778" layer="94">Temperature Sensors</text>
-<text x="20.32" y="38.1" size="1.778" layer="94">H2 Okay + Estop</text>
+<text x="35.56" y="50.8" size="2.1844" layer="94">Ethernet I/O</text>
 <text x="20.32" y="-17.78" size="1.778" layer="94">Fans</text>
 <text x="20.32" y="-73.66" size="1.778" layer="94">Valves</text>
-<wire x1="-15.24" y1="48.26" x2="-15.24" y2="-200.66" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="58.42" x2="-15.24" y2="-200.66" width="0.1524" layer="94"/>
 <wire x1="-15.24" y1="-200.66" x2="106.68" y2="-200.66" width="0.1524" layer="94"/>
-<wire x1="106.68" y1="-200.66" x2="106.68" y2="48.26" width="0.1524" layer="94"/>
-<wire x1="106.68" y1="48.26" x2="-15.24" y2="48.26" width="0.1524" layer="94"/>
+<wire x1="106.68" y1="-200.66" x2="106.68" y2="58.42" width="0.1524" layer="94"/>
+<wire x1="106.68" y1="58.42" x2="-15.24" y2="58.42" width="0.1524" layer="94"/>
+<text x="20.32" y="38.1" size="1.778" layer="94">H2 Okay + Estop</text>
 </plain>
 <instances>
 <instance part="FANS_1" gate="G$1" x="20.32" y="-40.64"/>
@@ -15186,8 +15187,13 @@ HOLES</text>
 </nets>
 </sheet>
 <sheet>
+<description>RELAY BOARD Ethernet</description>
 <plain>
 <text x="35.56" y="55.88" size="1.778" layer="94">Relay Board</text>
+<wire x1="2.54" y1="66.04" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="104.14" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="104.14" y1="-2.54" x2="104.14" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="104.14" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="RELAYBOARD1" gate="G$1" x="35.56" y="33.02"/>
@@ -15325,28 +15331,29 @@ HOLES</text>
 </nets>
 </sheet>
 <sheet>
+<description>POWER Ethernet</description>
 <plain>
 <text x="45.72" y="73.66" size="1.778" layer="94">FC Power</text>
 <text x="104.14" y="73.66" size="1.778" layer="94">Aux Power</text>
-<text x="0" y="93.98" size="1.778" layer="94">POWER CONNECTORS</text>
-<wire x1="0" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="94"/>
-<wire x1="124.46" y1="91.44" x2="124.46" y2="0" width="0.1524" layer="94"/>
-<wire x1="124.46" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="91.44" width="0.1524" layer="94"/>
-<text x="2.54" y="30.48" size="1.778" layer="94">PWR Indicator LEDS</text>
+<text x="27.94" y="88.9" size="2.1844" layer="94">POWER CONNECTORS</text>
+<wire x1="-10.16" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="124.46" y1="96.52" x2="124.46" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="124.46" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="96.52" width="0.1524" layer="94"/>
+<text x="0" y="30.48" size="1.778" layer="94">PWR Indicator LEDS</text>
 </plain>
 <instances>
 <instance part="FC_PWR" gate="G$1" x="48.26" y="53.34"/>
 <instance part="AUX_PWR" gate="G$1" x="106.68" y="53.34"/>
 <instance part="FC5-AUX5" gate="G$1" x="48.26" y="5.08"/>
-<instance part="FC5V" gate="G$1" x="5.08" y="10.16"/>
-<instance part="FC12V" gate="G$1" x="12.7" y="10.16"/>
-<instance part="AUX5V" gate="G$1" x="20.32" y="10.16"/>
-<instance part="AUX12V" gate="G$1" x="27.94" y="10.16"/>
-<instance part="R28" gate="G$1" x="5.08" y="17.78" rot="R90"/>
-<instance part="R29" gate="G$1" x="12.7" y="17.78" rot="R90"/>
-<instance part="R30" gate="G$1" x="20.32" y="17.78" rot="R90"/>
-<instance part="R31" gate="G$1" x="27.94" y="17.78" rot="R90"/>
+<instance part="FC5V" gate="G$1" x="2.54" y="7.62"/>
+<instance part="FC12V" gate="G$1" x="10.16" y="7.62"/>
+<instance part="AUX5V" gate="G$1" x="17.78" y="7.62"/>
+<instance part="AUX12V" gate="G$1" x="25.4" y="7.62"/>
+<instance part="R28" gate="G$1" x="2.54" y="15.24" rot="R90"/>
+<instance part="R29" gate="G$1" x="10.16" y="15.24" rot="R90"/>
+<instance part="R30" gate="G$1" x="17.78" y="15.24" rot="R90"/>
+<instance part="R31" gate="G$1" x="25.4" y="15.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15366,8 +15373,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
-<label x="12.7" y="22.86" size="1.778" layer="95" rot="R90"/>
+<wire x1="10.16" y1="20.32" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
+<label x="10.16" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="AUX12V" class="0">
@@ -15385,8 +15392,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="22.86" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.778" layer="95" rot="R90"/>
+<wire x1="25.4" y1="20.32" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
+<label x="25.4" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="AUX5V" class="0">
@@ -15409,8 +15416,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="22.86" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<label x="20.32" y="22.86" size="1.778" layer="95" rot="R90"/>
+<wire x1="17.78" y1="20.32" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
+<label x="17.78" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -15461,18 +15468,18 @@ HOLES</text>
 <segment>
 <pinref part="FC5V" gate="G$1" pin="C"/>
 <pinref part="FC12V" gate="G$1" pin="C"/>
-<wire x1="5.08" y1="5.08" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="AUX5V" gate="G$1" pin="C"/>
-<wire x1="12.7" y1="5.08" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
-<junction x="12.7" y="5.08"/>
+<wire x1="10.16" y1="2.54" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
+<junction x="10.16" y="2.54"/>
 <pinref part="AUX12V" gate="G$1" pin="C"/>
-<wire x1="15.24" y1="5.08" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="5.08" x2="27.94" y2="5.08" width="0.1524" layer="91"/>
-<junction x="20.32" y="5.08"/>
-<wire x1="15.24" y1="5.08" x2="15.24" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
-<junction x="15.24" y="5.08"/>
-<label x="17.78" y="2.54" size="1.778" layer="95"/>
+<wire x1="12.7" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
+<junction x="17.78" y="2.54"/>
+<wire x1="12.7" y1="2.54" x2="12.7" y2="0" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.1524" layer="91"/>
+<junction x="12.7" y="2.54"/>
+<label x="15.24" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC5V" class="0">
@@ -15495,8 +15502,8 @@ HOLES</text>
 </segment>
 <segment>
 <pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="22.86" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
-<label x="5.08" y="22.86" size="1.778" layer="95" rot="R90"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="22.86" width="0.1524" layer="91"/>
+<label x="2.54" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -15937,14 +15944,14 @@ HOLES</text>
 <wire x1="160.02" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="94"/>
 <wire x1="83.82" y1="86.36" x2="-20.32" y2="86.36" width="0.1524" layer="94"/>
 <wire x1="-20.32" y1="86.36" x2="-25.4" y2="86.36" width="0.1524" layer="94"/>
-<wire x1="-20.32" y1="86.36" x2="-20.32" y2="137.16" width="0.1524" layer="94"/>
-<wire x1="-20.32" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="94"/>
-<wire x1="83.82" y1="137.16" x2="83.82" y2="86.36" width="0.1524" layer="94"/>
-<text x="0" y="134.62" size="1.778" layer="94">Current Sensors LP Filter and Voltage Divider</text>
-<text x="-17.78" y="78.74" size="1.778" layer="94">Voltages LP Filter</text>
+<wire x1="-20.32" y1="86.36" x2="-20.32" y2="142.24" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="142.24" x2="83.82" y2="142.24" width="0.1524" layer="94"/>
+<wire x1="83.82" y1="142.24" x2="83.82" y2="86.36" width="0.1524" layer="94"/>
+<text x="-7.62" y="134.62" size="2.1844" layer="94">Current Sensors LP Filter and Voltage Divider</text>
+<text x="-17.78" y="78.74" size="2.1844" layer="94">Voltages LP Filter</text>
 </plain>
 <instances>
-<instance part="U$23" gate="G$1" x="60.96" y="48.26"/>
+<instance part="LP_FILTER_OP_AMP" gate="G$1" x="60.96" y="48.26"/>
 <instance part="C17" gate="G$1" x="58.42" y="96.52" rot="R90"/>
 <instance part="C18" gate="G$1" x="58.42" y="109.22" rot="R90"/>
 <instance part="C19" gate="G$1" x="58.42" y="121.92" rot="R90"/>
@@ -15990,15 +15997,15 @@ HOLES</text>
 <wire x1="68.58" y1="109.22" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$23" gate="G$1" pin="GND"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="GND"/>
 <wire x1="78.74" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <label x="83.82" y="48.26" size="1.778" layer="95"/>
-<pinref part="U$23" gate="G$1" pin="4IN+"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="4IN+"/>
 <wire x1="81.28" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="53.34" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <junction x="81.28" y="48.26"/>
-<pinref part="U$23" gate="G$1" pin="4IN-"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="4IN-"/>
 <wire x1="78.74" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="58.42" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
 <junction x="81.28" y="53.34"/>
@@ -16058,17 +16065,17 @@ HOLES</text>
 </net>
 <net name="FC5V" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="VCC"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="VCC"/>
 <wire x1="43.18" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
 <label x="30.48" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="1OUT"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="1OUT"/>
 <wire x1="43.18" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="63.5" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$23" gate="G$1" pin="1IN-"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="1IN-"/>
 <wire x1="38.1" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
 <junction x="38.1" y="58.42"/>
@@ -16077,17 +16084,17 @@ HOLES</text>
 </net>
 <net name="FC_VOLT" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="1IN+"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="1IN+"/>
 <wire x1="43.18" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 <label x="30.48" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="2OUT"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="2OUT"/>
 <wire x1="43.18" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="33.02" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$23" gate="G$1" pin="2IN-"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="2IN-"/>
 <wire x1="38.1" y1="38.1" x2="43.18" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
@@ -16096,10 +16103,10 @@ HOLES</text>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="3OUT"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="3OUT"/>
 <wire x1="78.74" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="33.02" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$23" gate="G$1" pin="3IN-"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="3IN-"/>
 <wire x1="83.82" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
 <junction x="83.82" y="33.02"/>
@@ -16108,14 +16115,14 @@ HOLES</text>
 </net>
 <net name="MOTOR_VOLT" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="2IN+"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="2IN+"/>
 <wire x1="43.18" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <label x="30.48" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAP_VOLT" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="3IN+"/>
+<pinref part="LP_FILTER_OP_AMP" gate="G$1" pin="3IN+"/>
 <wire x1="78.74" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <label x="83.82" y="43.18" size="1.778" layer="95"/>
 </segment>
