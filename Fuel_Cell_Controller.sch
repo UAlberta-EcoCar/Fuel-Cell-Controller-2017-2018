@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13100,10 +13100,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C23" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1µF"/>
 <part name="U$32" library="100uF_Cap" deviceset="CAP-VS-SERIES-PACKAGE-E(ELECT)" device="VS-SERIES-PACKAGE-E" value="1µF"/>
 <part name="FC5-AUX5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
-<part name="FC5V" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
-<part name="FC12V" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
-<part name="AUX5V" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
-<part name="AUX12V" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
+<part name="FC5VLED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
+<part name="FC12VLED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
+<part name="AUX5VLED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
+<part name="AUX12VLED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1"/>
 <part name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1"/>
 <part name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1"/>
 <part name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1"/>
@@ -13114,6 +13114,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R35" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1"/>
 <part name="R36" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1"/>
 <part name="R37" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1"/>
+<part name="C24" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1µF"/>
+<part name="C25" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10µF"/>
+<part name="C26" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10µF"/>
 </parts>
 <sheets>
 <sheet>
@@ -13193,9 +13196,9 @@ HOLES</text>
 <wire x1="124.46" y1="-259.08" x2="124.46" y2="-208.28" width="0.1524" layer="94"/>
 <text x="-10.16" y="-218.44" size="3.81" layer="94">TVS Surge Protection</text>
 <wire x1="360.68" y1="0" x2="482.6" y2="0" width="0.1524" layer="94"/>
-<wire x1="482.6" y1="0" x2="508" y2="0" width="0.1524" layer="94"/>
-<wire x1="508" y1="0" x2="508" y2="78.74" width="0.1524" layer="94"/>
-<wire x1="508" y1="78.74" x2="360.68" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="482.6" y1="0" x2="538.48" y2="0" width="0.1524" layer="94"/>
+<wire x1="538.48" y1="0" x2="538.48" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="538.48" y1="78.74" x2="360.68" y2="78.74" width="0.1524" layer="94"/>
 <text x="388.62" y="63.5" size="3.81" layer="94">DECOUPLING CAPACITORS</text>
 <text x="274.32" y="-157.48" size="1.778" layer="94">ALARM</text>
 <text x="81.28" y="-228.6" size="1.778" layer="94">Double check these</text>
@@ -13219,6 +13222,8 @@ HOLES</text>
 <wire x1="482.6" y1="-45.72" x2="482.6" y2="0" width="0.1524" layer="94"/>
 <text x="393.7" y="-93.98" size="1.778" layer="91">What is this for????</text>
 <text x="-50.8" y="-160.02" size="1.778" layer="94">P-Mosfet to invert signal</text>
+<text x="-88.9" y="58.42" size="1.778" layer="91">Board is powered 
+by 5V, not 12v</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="-5.08"/>
@@ -13297,6 +13302,9 @@ HOLES</text>
 <instance part="U$31" gate="G$1" x="0" y="-246.38"/>
 <instance part="C23" gate="G$1" x="490.22" y="33.02"/>
 <instance part="U$32" gate="G$1" x="497.84" y="35.56"/>
+<instance part="C24" gate="G$1" x="505.46" y="33.02"/>
+<instance part="C25" gate="G$1" x="518.16" y="33.02"/>
+<instance part="C26" gate="G$1" x="525.78" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -13509,6 +13517,18 @@ HOLES</text>
 <wire x1="497.84" y1="15.24" x2="490.22" y2="15.24" width="0.1524" layer="91"/>
 <junction x="490.22" y="15.24"/>
 <junction x="474.98" y="15.24"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="505.46" y1="30.48" x2="505.46" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="15.24" x2="497.84" y2="15.24" width="0.1524" layer="91"/>
+<junction x="497.84" y="15.24"/>
+<wire x1="518.16" y1="15.24" x2="525.78" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="518.16" y1="30.48" x2="518.16" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="2"/>
+<wire x1="525.78" y1="30.48" x2="525.78" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="15.24" x2="505.46" y2="15.24" width="0.1524" layer="91"/>
+<junction x="518.16" y="15.24"/>
+<junction x="505.46" y="15.24"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -13694,11 +13714,6 @@ HOLES</text>
 </segment>
 </net>
 <net name="FC12V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
-<wire x1="-53.34" y1="53.34" x2="-81.28" y2="53.34" width="0.1524" layer="91"/>
-<label x="-81.28" y="53.34" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="4"/>
 <wire x1="337.82" y1="48.26" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
@@ -14718,6 +14733,10 @@ HOLES</text>
 <wire x1="490.22" y1="45.72" x2="497.84" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="45.72" x2="497.84" y2="38.1" width="0.1524" layer="91"/>
 <junction x="490.22" y="45.72"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="505.46" y1="38.1" x2="505.46" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="45.72" x2="497.84" y2="45.72" width="0.1524" layer="91"/>
+<junction x="497.84" y="45.72"/>
 </segment>
 </net>
 <net name="FC5V" class="0">
@@ -14787,6 +14806,16 @@ HOLES</text>
 <wire x1="66.04" y1="-175.26" x2="66.04" y2="-170.18" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-170.18" x2="66.04" y2="-170.18" width="0.1524" layer="91"/>
 <label x="58.42" y="-170.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AUX12V" class="0">
+<segment>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="518.16" y1="38.1" x2="518.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="50.8" x2="525.78" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="525.78" y1="38.1" x2="525.78" y2="50.8" width="0.1524" layer="91"/>
+<label x="518.16" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -15331,7 +15360,7 @@ HOLES</text>
 </nets>
 </sheet>
 <sheet>
-<description>POWER Ethernet</description>
+<description>POWER Inputs</description>
 <plain>
 <text x="45.72" y="73.66" size="1.778" layer="94">FC Power</text>
 <text x="104.14" y="73.66" size="1.778" layer="94">Aux Power</text>
@@ -15346,10 +15375,10 @@ HOLES</text>
 <instance part="FC_PWR" gate="G$1" x="48.26" y="53.34"/>
 <instance part="AUX_PWR" gate="G$1" x="106.68" y="53.34"/>
 <instance part="FC5-AUX5" gate="G$1" x="48.26" y="5.08"/>
-<instance part="FC5V" gate="G$1" x="2.54" y="7.62"/>
-<instance part="FC12V" gate="G$1" x="10.16" y="7.62"/>
-<instance part="AUX5V" gate="G$1" x="17.78" y="7.62"/>
-<instance part="AUX12V" gate="G$1" x="25.4" y="7.62"/>
+<instance part="FC5VLED" gate="G$1" x="2.54" y="7.62"/>
+<instance part="FC12VLED" gate="G$1" x="10.16" y="7.62"/>
+<instance part="AUX5VLED" gate="G$1" x="17.78" y="7.62"/>
+<instance part="AUX12VLED" gate="G$1" x="25.4" y="7.62"/>
 <instance part="R28" gate="G$1" x="2.54" y="15.24" rot="R90"/>
 <instance part="R29" gate="G$1" x="10.16" y="15.24" rot="R90"/>
 <instance part="R30" gate="G$1" x="17.78" y="15.24" rot="R90"/>
@@ -15466,13 +15495,13 @@ HOLES</text>
 <label x="66.04" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="FC5V" gate="G$1" pin="C"/>
-<pinref part="FC12V" gate="G$1" pin="C"/>
+<pinref part="FC5VLED" gate="G$1" pin="C"/>
+<pinref part="FC12VLED" gate="G$1" pin="C"/>
 <wire x1="2.54" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="AUX5V" gate="G$1" pin="C"/>
+<pinref part="AUX5VLED" gate="G$1" pin="C"/>
 <wire x1="10.16" y1="2.54" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
 <junction x="10.16" y="2.54"/>
-<pinref part="AUX12V" gate="G$1" pin="C"/>
+<pinref part="AUX12VLED" gate="G$1" pin="C"/>
 <wire x1="12.7" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
 <junction x="17.78" y="2.54"/>
@@ -15508,25 +15537,25 @@ HOLES</text>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="FC5V" gate="G$1" pin="A"/>
+<pinref part="FC5VLED" gate="G$1" pin="A"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="FC12V" gate="G$1" pin="A"/>
+<pinref part="FC12VLED" gate="G$1" pin="A"/>
 <pinref part="R29" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="AUX5V" gate="G$1" pin="A"/>
+<pinref part="AUX5VLED" gate="G$1" pin="A"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="AUX12V" gate="G$1" pin="A"/>
+<pinref part="AUX12VLED" gate="G$1" pin="A"/>
 <pinref part="R31" gate="G$1" pin="1"/>
 </segment>
 </net>
