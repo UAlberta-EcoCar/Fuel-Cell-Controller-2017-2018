@@ -701,20 +701,18 @@ Temp/Humid</text>
 <rectangle x1="42.926" y1="6.731" x2="43.434" y2="7.239" layer="51" rot="R90"/>
 <rectangle x1="42.926" y1="4.191" x2="43.434" y2="4.699" layer="51" rot="R90"/>
 <rectangle x1="42.926" y1="1.651" x2="43.434" y2="2.159" layer="51" rot="R90"/>
-<text x="41.783" y="0.635" size="0.6096" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
-<text x="45.212" y="0.635" size="0.6096" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0" y2="16.51" width="0.1524" layer="21"/>
 <wire x1="0" y1="16.51" x2="44.45" y2="16.51" width="0.1524" layer="21"/>
 <wire x1="44.45" y1="16.51" x2="44.45" y2="0" width="0.1524" layer="21"/>
 <wire x1="44.45" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
-<text x="13.97" y="8.89" size="1.778" layer="21">Bluetooth</text>
-<text x="0.508" y="17.526" size="1.778" layer="21">Sparkfun Bluetooth Mate Silver</text>
-<text x="35.56" y="1.27" size="1.778" layer="21">GND</text>
-<text x="30.48" y="3.81" size="1.778" layer="21">CTS_5V</text>
-<text x="35.56" y="6.35" size="1.778" layer="21">VCC</text>
-<text x="32.258" y="8.89" size="1.778" layer="21">TX_5V</text>
-<text x="32.258" y="11.43" size="1.778" layer="21">RX_5V</text>
-<text x="30.607" y="13.97" size="1.778" layer="21">RTS_5V</text>
+<text x="1.27" y="5.08" size="1.778" layer="21">&gt;value</text>
+<text x="1.524" y="11.43" size="1.778" layer="21">&gt;name</text>
+<text x="36.576" y="0.889" size="1.778" layer="21">GND</text>
+<text x="32.766" y="3.429" size="1.778" layer="21">CTS_5V</text>
+<text x="36.957" y="5.969" size="1.778" layer="21">VCC</text>
+<text x="33.782" y="8.636" size="1.778" layer="21">TX_5V</text>
+<text x="33.528" y="11.176" size="1.778" layer="21">RX_5V</text>
+<text x="32.385" y="13.716" size="1.778" layer="21">RTS_5V</text>
 </package>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
