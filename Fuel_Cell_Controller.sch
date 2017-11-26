@@ -162,6 +162,10 @@
 <library name="ETHERNET">
 <packages>
 <package name="A122645-ND">
+<wire x1="-10" y1="-5.08" x2="10" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-10" y1="-5.08" x2="-10" y2="11.4" width="0.127" layer="21"/>
+<wire x1="10" y1="-5.08" x2="10" y2="11.4" width="0.127" layer="21"/>
+<wire x1="-10" y1="11.43" x2="10" y2="11.43" width="0.127" layer="21"/>
 <pad name="P$1" x="3.58" y="2.54" drill="1" shape="square"/>
 <pad name="P$2" x="2.56" y="4.32" drill="1"/>
 <pad name="P$3" x="1.54" y="2.54" drill="1"/>
@@ -174,20 +178,20 @@
 <pad name="P$10" x="-4.57" y="9.14" drill="1"/>
 <pad name="P$11" x="4.57" y="9.14" drill="1"/>
 <pad name="P$12" x="6.86" y="9.14" drill="1"/>
-<hole x="-6.35" y="0" drill="3.25"/>
-<hole x="6.35" y="0" drill="3.25"/>
 <pad name="P$13" x="-8.13" y="3.43" drill="1.8"/>
 <pad name="P$14" x="8.13" y="3.43" drill="1.8"/>
-<wire x1="-10" y1="-5.08" x2="10" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-10" y1="-5.08" x2="-10" y2="11.4" width="0.127" layer="21"/>
-<wire x1="10" y1="-5.08" x2="10" y2="11.4" width="0.127" layer="21"/>
-<wire x1="-10" y1="11.43" x2="10" y2="11.43" width="0.127" layer="21"/>
 <text x="-11.43" y="11.43" size="1.27" layer="21">&gt;NAME</text>
 <text x="2.54" y="11.43" size="1.27" layer="21">&gt;VALUE</text>
+<hole x="-6.35" y="0" drill="3.25"/>
+<hole x="6.35" y="0" drill="3.25"/>
 </package>
 </packages>
 <symbols>
 <symbol name="ETHERNET">
+<wire x1="0" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="17.78" width="0.254" layer="94"/>
 <pin name="1" x="-5.08" y="15.24" visible="pin" length="middle"/>
 <pin name="2" x="-5.08" y="12.7" visible="pin" length="middle"/>
 <pin name="3" x="-5.08" y="10.16" visible="pin" length="middle"/>
@@ -196,16 +200,12 @@
 <pin name="6" x="-5.08" y="2.54" visible="pin" length="middle"/>
 <pin name="7" x="-5.08" y="0" visible="pin" length="middle"/>
 <pin name="8" x="-5.08" y="-2.54" visible="pin" length="middle"/>
-<pin name="LED1P" x="-5.08" y="-5.08" visible="pin" length="middle"/>
 <pin name="LED1N" x="-5.08" y="-7.62" visible="pin" length="middle"/>
-<pin name="LED2P" x="-5.08" y="-10.16" visible="pin" length="middle"/>
+<pin name="LED1P" x="-5.08" y="-5.08" visible="pin" length="middle"/>
 <pin name="LED2N" x="-5.08" y="-12.7" visible="pin" length="middle"/>
+<pin name="LED2P" x="-5.08" y="-10.16" visible="pin" length="middle"/>
 <pin name="SHD1" x="-5.08" y="-15.24" visible="pin" length="middle"/>
 <pin name="SHD2" x="-5.08" y="-17.78" visible="pin" length="middle"/>
-<wire x1="0" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="0" y1="-20.32" x2="0" y2="17.78" width="0.254" layer="94"/>
 <text x="0" y="-22.86" size="1.778" layer="94">&gt;NAME</text>
 <text x="0" y="-25.4" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
@@ -493,8 +493,8 @@
 <wire x1="-3.25" y1="-3.56" x2="3.25" y2="-3.56" width="0.2032" layer="21"/>
 <wire x1="-3.25" y1="3.56" x2="3.25" y2="3.56" width="0.2032" layer="21"/>
 <wire x1="3.25" y1="3.56" x2="3.25" y2="-3.56" width="0.2032" layer="21"/>
-<text x="-5" y="4" size="1.27" layer="25">Photocoupler</text>
-<text x="-5" y="-5" size="1.27" layer="27">H11L1</text>
+<text x="-5" y="4" size="1.27" layer="25">&gt;name</text>
+<text x="-5" y="-5" size="1.27" layer="27">&gt;value</text>
 </package>
 <package name="DMP3056L-7">
 <smd name="G" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
@@ -640,7 +640,7 @@ Temp/Humid</text>
 <wire x1="11.176" y1="-2.032" x2="13.97" y2="0.762" width="0.00635" layer="21" curve="90"/>
 <wire x1="13.97" y1="0.762" x2="13.97" y2="12.446" width="0.00635" layer="21"/>
 <wire x1="13.97" y1="12.446" x2="11.176" y2="15.24" width="0.00635" layer="21" curve="90"/>
-<text x="-5.08" y="6.35" size="1.778" layer="21">ADS1015</text>
+<text x="-5.08" y="6.35" size="1.27" layer="21" font="vector" ratio="11">ADS1015</text>
 </package>
 <package name="1X06BLUETOOTH">
 <description>&lt;h3&gt;Plated Through Hole - 6 Pin&lt;/h3&gt;
@@ -777,9 +777,9 @@ Temp/Humid</text>
 <hole x="16.002" y="3.048" drill="2.54"/>
 <hole x="16.002" y="25.4" drill="2.54"/>
 <hole x="-16.002" y="25.4" drill="2.54"/>
-<text x="-8.89" y="11.43" size="1.778" layer="21">OLED Display</text>
-<text x="-3.81" y="7.62" size="1.778" layer="21">128x64</text>
-<text x="-13.97" y="3.81" size="1.778" layer="21">Use SPI Connection</text>
+<text x="-5.08" y="16.51" size="1.27" layer="21" font="vector" ratio="11">OLED Display</text>
+<text x="-2.54" y="13.97" size="1.27" layer="21" font="vector" ratio="11">128x64</text>
+<text x="-7.62" y="11.43" size="1.27" layer="21" ratio="11">Use SPI Connection</text>
 </package>
 </packages>
 <symbols>
@@ -1190,7 +1190,7 @@ Temp/Humid</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="H11L1">
+<deviceset name="H11L1" prefix="I">
 <gates>
 <gate name="G$1" symbol="H11L1" x="0" y="0"/>
 </gates>
@@ -1210,7 +1210,7 @@ Temp/Humid</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DMP3056L-7">
+<deviceset name="DMP3056L-7" prefix="M">
 <gates>
 <gate name="G$1" symbol="DMP3056L-7" x="0" y="0"/>
 </gates>
@@ -2653,14 +2653,14 @@ D = Direct mounting &lt;p&gt;
 <pad name="P$8" x="20.32" y="2.54" drill="0.8"/>
 <circle x="2.54" y="15.24" radius="1.27" width="0.127" layer="21"/>
 <circle x="20.32" y="15.24" radius="1.27" width="0.127" layer="21"/>
-<text x="1.27" y="3.81" size="1.27" layer="21">Vin</text>
-<text x="3.81" y="0" size="1.27" layer="21">GND</text>
-<text x="6.35" y="3.81" size="1.27" layer="21">SCL</text>
-<text x="8.89" y="0" size="1.27" layer="21">SDA</text>
-<text x="11.43" y="3.81" size="1.27" layer="21">BAT</text>
-<text x="13.97" y="0" size="1.27" layer="21">32K</text>
-<text x="16.51" y="3.81" size="1.27" layer="21">SQW</text>
-<text x="19.05" y="0" size="1.27" layer="21">RST</text>
+<text x="1.27" y="3.81" size="1.27" layer="21" font="vector" ratio="11">Vin</text>
+<text x="3.81" y="0" size="1.27" layer="21" font="vector" ratio="11">GND</text>
+<text x="6.35" y="3.81" size="1.27" layer="21" font="vector" ratio="11">SCL</text>
+<text x="8.89" y="0" size="1.27" layer="21" font="vector" ratio="11">SDA</text>
+<text x="11.43" y="3.81" size="1.27" layer="21" font="vector" ratio="11">BAT</text>
+<text x="13.97" y="0" size="1.27" layer="21" font="vector" ratio="11">32K</text>
+<text x="16.51" y="3.81" size="1.27" layer="21" font="vector" ratio="11">SQW</text>
+<text x="19.05" y="0" size="1.27" layer="21" font="vector" ratio="11">RST</text>
 </package>
 </packages>
 <symbols>
@@ -15552,7 +15552,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND6" library="E-P-008-R1.2" deviceset="GND" device=""/>
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
 <part name="R23" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
-<part name="X3" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F09" device="HP" package3d_urn="urn:adsk.eagle:package:10232/1"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1µF"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1µF"/>
 <part name="U$26" library="EG4621CT-ND" deviceset="EG4621CT-ND" device=""/>
@@ -15600,6 +15599,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO214AC" package3d_urn="urn:adsk.eagle:package:43417/2"/>
 <part name="D8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO214AC" package3d_urn="urn:adsk.eagle:package:43417/2"/>
 <part name="D9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO214AC" package3d_urn="urn:adsk.eagle:package:43417/2"/>
+<part name="C27" library="SparkFun-Passives" deviceset="CAP" device="0805" value="1µF"/>
 </parts>
 <sheets>
 <sheet>
@@ -15693,7 +15693,6 @@ HOLES</text>
 <text x="264.16" y="-193.04" size="1.778" layer="94">SHUTDOWN</text>
 <text x="264.16" y="-198.12" size="1.778" layer="94">STARTUP</text>
 <wire x1="360.68" y1="-45.72" x2="482.6" y2="-45.72" width="0.1524" layer="94"/>
-<text x="378.46" y="-55.88" size="3.81" layer="94">BACKUP RS232 PORT</text>
 <wire x1="482.6" y1="-45.72" x2="482.6" y2="-127" width="0.1524" layer="94"/>
 <wire x1="482.6" y1="-127" x2="360.68" y2="-127" width="0.1524" layer="94"/>
 <text x="383.54" y="-137.16" size="3.81" layer="94">PUSH BUTTON (ACTIVE HIGH)</text>
@@ -15703,7 +15702,6 @@ HOLES</text>
 <wire x1="124.46" y1="-259.08" x2="256.54" y2="-259.08" width="0.1524" layer="94"/>
 <wire x1="256.54" y1="-259.08" x2="256.54" y2="-215.9" width="0.1524" layer="94"/>
 <wire x1="482.6" y1="-45.72" x2="482.6" y2="0" width="0.1524" layer="94"/>
-<text x="393.7" y="-93.98" size="1.778" layer="91">What is this for????</text>
 <text x="-50.8" y="-160.02" size="1.778" layer="94">P-Mosfet to invert signal</text>
 <text x="-88.9" y="58.42" size="1.778" layer="91">Board is powered 
 by 5V, not 12v</text>
@@ -15773,7 +15771,6 @@ by 5V, not 12v</text>
 <instance part="GND6" gate="1" x="424.18" y="10.16"/>
 <instance part="R22" gate="G$1" x="307.34" y="50.8"/>
 <instance part="R23" gate="G$1" x="287.02" y="50.8"/>
-<instance part="X3" gate="G$1" x="414.02" y="-78.74"/>
 <instance part="C7" gate="G$1" x="391.16" y="33.02"/>
 <instance part="C16" gate="G$1" x="375.92" y="33.02"/>
 <instance part="U$26" gate="G$1" x="408.94" y="-154.94"/>
@@ -17326,6 +17323,7 @@ by 5V, not 12v</text>
 <instance part="PRESSURE" gate="G$1" x="76.2" y="-154.94"/>
 <instance part="START" gate="G$1" x="20.32" y="-154.94"/>
 <instance part="R38" gate="G$1" x="-5.08" y="-134.62" rot="R90"/>
+<instance part="C27" gate="G$1" x="-7.62" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -17514,6 +17512,11 @@ by 5V, not 12v</text>
 <wire x1="55.88" y1="-38.1" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
 <label x="43.18" y="-38.1" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="22.86" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
+<label x="-7.62" y="17.78" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="FAN1_PWR" class="0">
 <segment>
@@ -17581,8 +17584,9 @@ by 5V, not 12v</text>
 <net name="STOP" class="0">
 <segment>
 <pinref part="H2_SENSOR" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
 <label x="0" y="30.48" size="1.778" layer="95"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="30.48" x2="-7.62" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="H2_OK" class="0">

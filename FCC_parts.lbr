@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -343,8 +343,8 @@
 <wire x1="-3.25" y1="-3.56" x2="3.25" y2="-3.56" width="0.2032" layer="21"/>
 <wire x1="-3.25" y1="3.56" x2="3.25" y2="3.56" width="0.2032" layer="21"/>
 <wire x1="3.25" y1="3.56" x2="3.25" y2="-3.56" width="0.2032" layer="21"/>
-<text x="-5" y="4" size="1.27" layer="25">Photocoupler</text>
-<text x="-5" y="-5" size="1.27" layer="27">H11L1</text>
+<text x="-5" y="4" size="1.27" layer="25">&gt;name</text>
+<text x="-5" y="-5" size="1.27" layer="27">&gt;value</text>
 </package>
 <package name="1734723-1_RJ11">
 <wire x1="-8.8" y1="-14.48" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
@@ -539,7 +539,7 @@ Temp/Humid</text>
 <wire x1="11.176" y1="-2.032" x2="13.97" y2="0.762" width="0.00635" layer="21" curve="90"/>
 <wire x1="13.97" y1="0.762" x2="13.97" y2="12.446" width="0.00635" layer="21"/>
 <wire x1="13.97" y1="12.446" x2="11.176" y2="15.24" width="0.00635" layer="21" curve="90"/>
-<text x="-5.08" y="6.35" size="1.778" layer="21">ADS1015</text>
+<text x="-5.08" y="6.35" size="1.27" layer="21" font="vector" ratio="11">ADS1015</text>
 </package>
 <package name="1X06BLUETOOTH">
 <description>&lt;h3&gt;Plated Through Hole - 6 Pin&lt;/h3&gt;
@@ -707,9 +707,9 @@ Temp/Humid</text>
 <hole x="16.002" y="3.048" drill="2.54"/>
 <hole x="16.002" y="25.4" drill="2.54"/>
 <hole x="-16.002" y="25.4" drill="2.54"/>
-<text x="-8.89" y="11.43" size="1.778" layer="21">OLED Display</text>
-<text x="-3.81" y="7.62" size="1.778" layer="21">128x64</text>
-<text x="-13.97" y="3.81" size="1.778" layer="21">Use SPI Connection</text>
+<text x="-5.08" y="16.51" size="1.27" layer="21" font="vector" ratio="11">OLED Display</text>
+<text x="-2.54" y="13.97" size="1.27" layer="21" font="vector" ratio="11">128x64</text>
+<text x="-7.62" y="11.43" size="1.27" layer="21" ratio="11">Use SPI Connection</text>
 </package>
 </packages>
 <symbols>
@@ -1173,7 +1173,7 @@ Temp/Humid</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DMP3056L-7">
+<deviceset name="DMP3056L-7" prefix="M">
 <gates>
 <gate name="G$1" symbol="DMP3056L-7" x="0" y="0"/>
 </gates>
@@ -1224,7 +1224,7 @@ Temp/Humid</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="H11L1">
+<deviceset name="H11L1" prefix="I">
 <gates>
 <gate name="G$1" symbol="H11L1" x="0" y="0"/>
 </gates>
