@@ -15483,7 +15483,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U$7" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$8" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$9" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
-<part name="U$10" library="FCC_parts" deviceset="UMFT234XF" device="UMFT234XF"/>
+<part name="U$10" library="FCC_parts" deviceset="UMFT234XF" device="UMFT234XF" value="UMFT234XF"/>
 <part name="U$5" library="FCC_parts" deviceset="SN74LVC245AN" device=""/>
 <part name="SHTSENSOR" library="FCC_parts" deviceset="SHT31-DIS" device=""/>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
@@ -16321,15 +16321,6 @@ by 5V, not 12v</text>
 <pinref part="X2" gate="G$1" pin="3"/>
 <wire x1="226.06" y1="5.08" x2="205.74" y2="5.08" width="0.1524" layer="91"/>
 <label x="205.74" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$10" gate="G$1" pin="3V3"/>
-<wire x1="205.74" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="58.42" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="VIO"/>
-<wire x1="200.66" y1="53.34" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TO_FTDI" class="0">
