@@ -15445,6 +15445,88 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="n-mos switch">
+<packages>
+<package name="SOT23-3">
+<description>SOT23-3</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LABELED-NMOS">
+<description>&lt;h3&gt; N-channel MOSFET transistor&lt;/h3&gt;
+Switches electronic signals</description>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0.6858" x2="-1.9812" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.2954" x2="-1.9812" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="-1.9812" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="2.54" x2="-1.9812" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="-1.9812" y2="1.0922" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-1.2192" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.7112" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.8034" x2="2.54" y2="0.5588" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.5588" x2="3.302" y2="0.5588" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.5588" x2="1.778" y2="0.5588" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.778" y="-0.7112"/>
+<vertex x="2.54" y="0.5588"/>
+<vertex x="3.302" y="-0.7112"/>
+</polygon>
+<wire x1="3.302" y1="0.5588" x2="3.4798" y2="0.7366" width="0.1524" layer="94"/>
+<wire x1="1.6002" y1="0.381" x2="1.778" y2="0.5588" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.9812" y="0"/>
+<vertex x="-1.2192" y="0.254"/>
+<vertex x="-1.2192" y="-0.254"/>
+</polygon>
+<text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOSFET-NCH" prefix="Q">
+<gates>
+<gate name="NMOS" symbol="LABELED-NMOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-AO3404A" package="SOT23-3">
+<connects>
+<connect gate="NMOS" pin="D" pad="3"/>
+<connect gate="NMOS" pin="G" pad="1"/>
+<connect gate="NMOS" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-12988"/>
+<attribute name="VALUE" value="5.8A/30V/35mΩ"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15539,9 +15621,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C15" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1µF"/>
 <part name="GND4" library="E-P-008-R1.2" deviceset="GND" device=""/>
 <part name="LP_FILTER_OP_AMP" library="FCC_parts" deviceset="TLV2404" device="TLV2404"/>
-<part name="U$24" library="FCC_parts" deviceset="DMP3056L-7" device="DMP3056L-7"/>
-<part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
-<part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED" device="1206" value="YELLOW"/>
 <part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="324Ω"/>
 <part name="U$25" library="FCC_parts" deviceset="5060BRG4" device="5060BRG4"/>
@@ -15600,6 +15679,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO214AC" package3d_urn="urn:adsk.eagle:package:43417/2"/>
 <part name="D9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO214AC" package3d_urn="urn:adsk.eagle:package:43417/2"/>
 <part name="C27" library="SparkFun-Passives" deviceset="CAP" device="0805" value="1µF"/>
+<part name="Q1" library="n-mos switch" deviceset="MOSFET-NCH" device="-AO3404A" value="5.8A/30V/35mΩ"/>
+<part name="R39" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
 </parts>
 <sheets>
 <sheet>
@@ -15702,7 +15783,7 @@ HOLES</text>
 <wire x1="124.46" y1="-259.08" x2="256.54" y2="-259.08" width="0.1524" layer="94"/>
 <wire x1="256.54" y1="-259.08" x2="256.54" y2="-215.9" width="0.1524" layer="94"/>
 <wire x1="482.6" y1="-45.72" x2="482.6" y2="0" width="0.1524" layer="94"/>
-<text x="-50.8" y="-160.02" size="1.778" layer="94">P-Mosfet to invert signal</text>
+<text x="-50.8" y="-160.02" size="1.778" layer="94">N-Mosfet to invert signal</text>
 <text x="-88.9" y="58.42" size="1.778" layer="91">Board is powered 
 by 5V, not 12v</text>
 </plain>
@@ -15758,9 +15839,6 @@ by 5V, not 12v</text>
 <instance part="C14" gate="G$1" x="58.42" y="-180.34"/>
 <instance part="C15" gate="G$1" x="66.04" y="-180.34"/>
 <instance part="GND4" gate="1" x="66.04" y="-190.5"/>
-<instance part="U$24" gate="G$1" x="-33.02" y="-180.34"/>
-<instance part="R16" gate="G$1" x="-33.02" y="-165.1"/>
-<instance part="R17" gate="G$1" x="-15.24" y="-193.04" rot="R90"/>
 <instance part="D2" gate="G$1" x="327.66" y="-170.18" rot="R90"/>
 <instance part="R18" gate="G$1" x="314.96" y="-170.18"/>
 <instance part="U$25" gate="G$1" x="327.66" y="-193.04" rot="R180"/>
@@ -15785,6 +15863,8 @@ by 5V, not 12v</text>
 <instance part="C24" gate="G$1" x="505.46" y="33.02"/>
 <instance part="C25" gate="G$1" x="518.16" y="33.02"/>
 <instance part="C26" gate="G$1" x="525.78" y="33.02"/>
+<instance part="Q1" gate="NMOS" x="-27.94" y="-177.8"/>
+<instance part="R39" gate="G$1" x="-35.56" y="-185.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16021,11 +16101,6 @@ by 5V, not 12v</text>
 <junction x="66.04" y="-185.42"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="-198.12" x2="-15.24" y2="-203.2" width="0.1524" layer="91"/>
-<label x="-15.24" y="-203.2" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="332.74" y1="-157.48" x2="347.98" y2="-157.48" width="0.1524" layer="91"/>
@@ -16066,6 +16141,16 @@ by 5V, not 12v</text>
 <pinref part="U$31" gate="G$1" pin="A"/>
 <wire x1="-2.54" y1="-246.38" x2="-15.24" y2="-246.38" width="0.1524" layer="91"/>
 <label x="-15.24" y="-246.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R39" gate="G$1" pin="1"/>
+<wire x1="-35.56" y1="-190.5" x2="-30.48" y2="-190.5" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="NMOS" pin="S"/>
+<wire x1="-30.48" y1="-190.5" x2="-25.4" y2="-190.5" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-190.5" x2="-25.4" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-190.5" x2="-30.48" y2="-193.04" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-190.5"/>
+<label x="-30.48" y="-193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FROM_OPEN" class="0">
@@ -16140,16 +16225,6 @@ by 5V, not 12v</text>
 <wire x1="391.16" y1="45.72" x2="398.78" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="45.72" x2="398.78" y2="38.1" width="0.1524" layer="91"/>
 <junction x="391.16" y="45.72"/>
-</segment>
-<segment>
-<pinref part="U$24" gate="G$1" pin="DRAIN"/>
-<wire x1="-45.72" y1="-180.34" x2="-50.8" y2="-180.34" width="0.1524" layer="91"/>
-<label x="-60.96" y="-180.34" size="1.778" layer="95"/>
-<wire x1="-50.8" y1="-180.34" x2="-60.96" y2="-180.34" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-180.34" x2="-50.8" y2="-165.1" width="0.1524" layer="91"/>
-<junction x="-50.8" y="-180.34"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="-50.8" y1="-165.1" x2="-38.1" y2="-165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$26" gate="G$1" pin="P$1"/>
@@ -16382,14 +16457,12 @@ by 5V, not 12v</text>
 <label x="-81.28" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$24" gate="G$1" pin="GATE"/>
-<wire x1="-20.32" y1="-175.26" x2="-15.24" y2="-175.26" width="0.1524" layer="91"/>
-<label x="-10.16" y="-175.26" size="1.778" layer="95"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="-175.26" x2="-5.08" y2="-175.26" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-165.1" x2="-15.24" y2="-165.1" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-165.1" x2="-15.24" y2="-175.26" width="0.1524" layer="91"/>
-<junction x="-15.24" y="-175.26"/>
+<pinref part="Q1" gate="NMOS" pin="G"/>
+<wire x1="-33.02" y1="-180.34" x2="-35.56" y2="-180.34" width="0.1524" layer="91"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="-35.56" y1="-180.34" x2="-38.1" y2="-180.34" width="0.1524" layer="91"/>
+<junction x="-35.56" y="-180.34"/>
+<label x="-38.1" y="-177.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="H2_OK" class="0">
@@ -16944,15 +17017,6 @@ by 5V, not 12v</text>
 </net>
 <net name="OE*" class="0">
 <segment>
-<pinref part="U$24" gate="G$1" pin="SOURCE"/>
-<wire x1="-20.32" y1="-185.42" x2="-15.24" y2="-185.42" width="0.1524" layer="91"/>
-<label x="-10.16" y="-185.42" size="1.778" layer="95"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="-185.42" x2="-5.08" y2="-185.42" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-185.42" x2="-15.24" y2="-187.96" width="0.1524" layer="91"/>
-<junction x="-15.24" y="-185.42"/>
-</segment>
-<segment>
 <pinref part="U$5" gate="G$1" pin="OE*"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="-106.68" x2="-5.08" y2="-106.68" width="0.1524" layer="91"/>
@@ -16963,6 +17027,11 @@ by 5V, not 12v</text>
 <pinref part="U$3" gate="G$1" pin="OE*"/>
 <wire x1="88.9" y1="-106.68" x2="81.28" y2="-106.68" width="0.1524" layer="91"/>
 <label x="83.82" y="-106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="NMOS" pin="D"/>
+<wire x1="-25.4" y1="-172.72" x2="-25.4" y2="-167.64" width="0.1524" layer="91"/>
+<label x="-27.94" y="-167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="START_LED" class="0">
