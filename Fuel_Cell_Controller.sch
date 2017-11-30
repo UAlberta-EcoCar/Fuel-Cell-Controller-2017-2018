@@ -15800,6 +15800,14 @@ Switches electronic signals</description>
 <part name="JP4" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="U$23" library="FCC_parts" deviceset="BA07CC0FP-E2" device=""/>
 <part name="JP3" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
+<part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="R40" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="R41" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="R42" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="R43" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="R44" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
+<part name="R45" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10kΩ"/>
 </parts>
 <sheets>
 <sheet>
@@ -17877,6 +17885,14 @@ HOLES</text>
 </plain>
 <instances>
 <instance part="PRESSURE" gate="G$1" x="114.3" y="45.72"/>
+<instance part="R16" gate="G$1" x="30.48" y="76.2" rot="R180"/>
+<instance part="R17" gate="G$1" x="40.64" y="71.12" rot="R180"/>
+<instance part="R40" gate="G$1" x="30.48" y="60.96" rot="R180"/>
+<instance part="R41" gate="G$1" x="40.64" y="55.88" rot="R180"/>
+<instance part="R42" gate="G$1" x="30.48" y="45.72" rot="R180"/>
+<instance part="R43" gate="G$1" x="40.64" y="40.64" rot="R180"/>
+<instance part="R44" gate="G$1" x="30.48" y="30.48" rot="R180"/>
+<instance part="R45" gate="G$1" x="40.64" y="25.4" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -17909,12 +17925,37 @@ HOLES</text>
 <wire x1="109.22" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
 <label x="96.52" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
+<label x="50.8" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R41" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<label x="50.8" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R43" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="40.64" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
+<label x="50.8" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R45" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
+<label x="50.8" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="_PRESSURE_1" class="0">
 <segment>
 <pinref part="PRESSURE" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <label x="88.9" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
+<label x="2.54" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="_PRESSURE_2" class="0">
@@ -17923,6 +17964,11 @@ HOLES</text>
 <wire x1="109.22" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
 <label x="88.9" y="55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R40" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+<label x="2.54" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="_PRESSURE_3" class="0">
 <segment>
@@ -17930,12 +17976,62 @@ HOLES</text>
 <wire x1="109.22" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="88.9" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R42" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
+<label x="2.54" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="_PRESSURE_4" class="0">
 <segment>
 <pinref part="PRESSURE" gate="G$1" pin="5"/>
 <wire x1="109.22" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
 <label x="88.9" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R44" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
+<label x="2.54" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_1" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="76.2" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
+<junction x="35.56" y="76.2"/>
+<label x="50.8" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_2" class="0">
+<segment>
+<pinref part="R40" gate="G$1" pin="1"/>
+<pinref part="R41" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="60.96" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<junction x="35.56" y="60.96"/>
+<label x="50.8" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_3" class="0">
+<segment>
+<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="R43" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="45.72" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
+<junction x="35.56" y="45.72"/>
+<label x="50.8" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PRESSURE_4" class="0">
+<segment>
+<pinref part="R44" gate="G$1" pin="1"/>
+<pinref part="R45" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="25.4" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<junction x="35.56" y="30.48"/>
+<label x="50.8" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
