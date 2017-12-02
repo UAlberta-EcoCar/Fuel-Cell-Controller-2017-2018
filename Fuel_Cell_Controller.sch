@@ -15914,6 +15914,7 @@ HOLES</text>
 <text x="-50.8" y="-160.02" size="1.778" layer="94">N-Mosfet to invert signal</text>
 <text x="-96.52" y="30.48" size="1.778" layer="91" rot="R90">Jumpers for selecting power</text>
 <text x="-83.82" y="76.2" size="1.778" layer="91">12V to 7V regulator to lighten the load on the nucleo regulator</text>
+<text x="200.66" y="-5.08" size="1.778" layer="91">Make sure this is a male connector</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="-5.08"/>
@@ -16116,11 +16117,6 @@ HOLES</text>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="337.82" y1="53.34" x2="320.04" y2="53.34" width="0.1524" layer="91"/>
-<label x="320.04" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
 <wire x1="-53.34" y1="30.48" x2="-81.28" y2="30.48" width="0.1524" layer="91"/>
 <label x="-81.28" y="30.48" size="1.778" layer="95"/>
@@ -16287,6 +16283,11 @@ HOLES</text>
 <pinref part="U$23" gate="G$1" pin="GND"/>
 <wire x1="-60.96" y1="71.12" x2="-55.88" y2="71.12" width="0.1524" layer="91"/>
 <label x="-55.88" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="3"/>
+<wire x1="337.82" y1="50.8" x2="320.04" y2="50.8" width="0.1524" layer="91"/>
+<label x="320.04" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FROM_OPEN" class="0">
@@ -16522,9 +16523,9 @@ HOLES</text>
 <label x="193.04" y="-66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="7.62" x2="205.74" y2="7.62" width="0.1524" layer="91"/>
-<label x="205.74" y="7.62" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="3"/>
+<wire x1="226.06" y1="5.08" x2="205.74" y2="5.08" width="0.1524" layer="91"/>
+<label x="203.2" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FROM_MOTOR" class="0">
@@ -16534,9 +16535,9 @@ HOLES</text>
 <label x="193.04" y="-71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="3"/>
-<wire x1="226.06" y1="5.08" x2="205.74" y2="5.08" width="0.1524" layer="91"/>
-<label x="205.74" y="5.08" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="7.62" x2="205.74" y2="7.62" width="0.1524" layer="91"/>
+<label x="203.2" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TO_FTDI" class="0">
@@ -17253,13 +17254,6 @@ HOLES</text>
 <label x="294.64" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="3"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="337.82" y1="50.8" x2="312.42" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="BUTTON" class="0">
 <segment>
 <pinref part="U$26" gate="G$1" pin="P$2"/>
@@ -17522,6 +17516,15 @@ HOLES</text>
 <wire x1="-71.12" y1="55.88" x2="-71.12" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="53.34" x2="-53.34" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="312.42" y1="50.8" x2="314.96" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="50.8" x2="314.96" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="314.96" y1="53.34" x2="337.82" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
