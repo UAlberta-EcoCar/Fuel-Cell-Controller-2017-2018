@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3095,19 +3095,19 @@ design rules under a new name.</description>
 <element name="AUX12VLED" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/1" value="" x="49.784" y="144.272" smashed="yes" rot="R90">
 <attribute name="VALUE" x="51.054" y="146.812" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="" x="64.008" y="138.176" smashed="yes">
+<element name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="604Ω" x="64.008" y="138.176" smashed="yes">
 <attribute name="NAME" x="62.865" y="139.446" size="1.27" layer="25" ratio="11"/>
 <attribute name="VALUE" x="63.373" y="135.636" size="1.27" layer="27"/>
 </element>
-<element name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="" x="64.008" y="135.636" smashed="yes">
+<element name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="604Ω" x="64.008" y="135.636" smashed="yes">
 <attribute name="NAME" x="65.913" y="134.874" size="1.27" layer="25" ratio="11"/>
 <attribute name="VALUE" x="63.373" y="133.096" size="1.27" layer="27"/>
 </element>
-<element name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="" x="47.752" y="137.668" smashed="yes" rot="R270">
+<element name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="324Ω" x="47.752" y="137.668" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.99" y="135.763" size="1.27" layer="25" ratio="11" rot="R270"/>
 <attribute name="VALUE" x="45.212" y="138.303" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="" x="52.832" y="142.24" smashed="yes" rot="R90">
+<element name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="324Ω" x="52.832" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="53.721" y="141.478" size="1.27" layer="25" ratio="11"/>
 <attribute name="VALUE" x="55.372" y="141.605" size="1.27" layer="27" rot="R90"/>
 </element>
