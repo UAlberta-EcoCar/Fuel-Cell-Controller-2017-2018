@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15823,11 +15823,6 @@ HOLES</text>
 <label x="45.72" y="-147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="5"/>
-<wire x1="337.82" y1="45.72" x2="320.04" y2="45.72" width="0.1524" layer="91"/>
-<label x="320.04" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="-53.34" y1="27.94" x2="-81.28" y2="27.94" width="0.1524" layer="91"/>
 <label x="-81.28" y="27.94" size="1.778" layer="95"/>
@@ -16087,6 +16082,11 @@ HOLES</text>
 <junction x="421.64" y="-114.3"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="337.82" y1="55.88" x2="320.04" y2="55.88" width="0.1524" layer="91"/>
+<label x="320.04" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FROM_OPEN" class="0">
 <segment>
@@ -16204,11 +16204,6 @@ HOLES</text>
 </segment>
 </net>
 <net name="FC12V" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="4"/>
-<wire x1="337.82" y1="48.26" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
-<label x="320.04" y="48.26" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$22" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="-241.3" x2="63.5" y2="-241.3" width="0.1524" layer="91"/>
@@ -17340,6 +17335,11 @@ HOLES</text>
 <label x="-45.72" y="63.5" size="1.778" layer="95"/>
 <pinref part="U$33" gate="G$1" pin="P$2"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="337.82" y1="53.34" x2="320.04" y2="53.34" width="0.1524" layer="91"/>
+<label x="320.04" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -17355,15 +17355,6 @@ HOLES</text>
 <pinref part="U$24" gate="G$1" pin="2"/>
 <wire x1="-83.82" y1="66.04" x2="-83.82" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="68.58" x2="-78.74" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="312.42" y1="50.8" x2="314.96" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="50.8" x2="314.96" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="314.96" y1="53.34" x2="337.82" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -17403,6 +17394,15 @@ HOLES</text>
 <pinref part="U$19" gate="G$1" pin="ALRT"/>
 <wire x1="317.5" y1="-73.66" x2="294.64" y2="-73.66" width="0.1524" layer="91"/>
 <label x="294.64" y="-73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="312.42" y1="50.8" x2="314.96" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="50.8" x2="314.96" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="4"/>
+<wire x1="314.96" y1="48.26" x2="337.82" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
