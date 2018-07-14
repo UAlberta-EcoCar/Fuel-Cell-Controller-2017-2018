@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -345,24 +345,6 @@
 <wire x1="3.25" y1="3.56" x2="3.25" y2="-3.56" width="0.2032" layer="21"/>
 <text x="-5" y="4" size="1.27" layer="25">&gt;name</text>
 <text x="-5" y="-5" size="1.27" layer="27">&gt;value</text>
-</package>
-<package name="1734723-1_RJ11">
-<wire x1="-8.8" y1="-14.48" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
-<wire x1="-8.8" y1="4.06" x2="-8.8" y2="-14.48" width="0.127" layer="21"/>
-<wire x1="7.53" y1="4.06" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
-<wire x1="-8.8" y1="4.06" x2="7.53" y2="4.06" width="0.127" layer="21"/>
-<pad name="1" x="-3.81" y="2.54" drill="1" shape="square"/>
-<pad name="2" x="-1.27" y="2.54" drill="1"/>
-<pad name="3" x="1.27" y="2.54" drill="1"/>
-<pad name="4" x="-2.54" y="0" drill="1"/>
-<pad name="5" x="0" y="0" drill="1"/>
-<pad name="6" x="2.54" y="0" drill="1"/>
-<pad name="SH1" x="-7.5" y="-9.4" drill="1.65"/>
-<pad name="SH2" x="6.22" y="-9.4" drill="1.65"/>
-<text x="-8.89" y="5.08" size="1.27" layer="21">&gt;name</text>
-<text x="-8.89" y="7.62" size="1.27" layer="21">&gt;value</text>
-<hole x="-5.72" y="-6.35" drill="3.3"/>
-<hole x="4.44" y="-6.35" drill="3.3"/>
 </package>
 <package name="A122645-ND">
 <wire x1="-10" y1="-5.08" x2="10" y2="-5.08" width="0.127" layer="21"/>
@@ -985,33 +967,6 @@ TS-003</description>
 <text x="-10.16" y="-10.16" size="1.778" layer="96">H11L1</text>
 <text x="-10.16" y="7.62" size="1.27" layer="95">PHOTOCOUPLER</text>
 </symbol>
-<symbol name="1734723-1_RJ11">
-<wire x1="-2.54" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-25.4" x2="5.08" y2="15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="15.24" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="15.24" x2="-2.54" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-22.86" x2="-2.54" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-22.86" x2="-7.62" y2="-22.86" width="0.254" layer="94"/>
-<pin name="1" x="-7.62" y="12.7" visible="pin" length="middle"/>
-<pin name="2" x="-7.62" y="7.62" visible="pin" length="middle"/>
-<pin name="3" x="-7.62" y="2.54" visible="pin" length="middle"/>
-<pin name="4" x="-7.62" y="-2.54" visible="pin" length="middle"/>
-<pin name="5" x="-7.62" y="-7.62" visible="pin" length="middle"/>
-<pin name="6" x="-7.62" y="-12.7" visible="pin" length="middle"/>
-<pin name="SH1" x="-7.62" y="-17.78" visible="pin" length="middle"/>
-<pin name="SH2" x="-7.62" y="-22.86" visible="pin" length="middle"/>
-<text x="-5.08" y="-27.94" size="1.778" layer="94">1734723-1 </text>
-<text x="-5.08" y="-30.48" size="1.27" layer="94">&gt;name</text>
-<text x="-5.08" y="-33.02" size="1.27" layer="94">&gt;value</text>
-</symbol>
 <symbol name="ETHERNET">
 <wire x1="0" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
 <wire x1="10.16" y1="17.78" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
@@ -1409,28 +1364,6 @@ TS-003</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="VO" pad="VO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5555140-6" prefix="E">
-<gates>
-<gate name="G$1" symbol="1734723-1_RJ11" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="1734723-1_RJ11">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="SH1" pad="SH1"/>
-<connect gate="G$1" pin="SH2" pad="SH2"/>
 </connects>
 <technologies>
 <technology name=""/>

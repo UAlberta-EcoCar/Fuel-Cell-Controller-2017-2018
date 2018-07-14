@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -250,10 +250,10 @@
 <wire x1="7.53" y1="4.06" x2="7.53" y2="-14.48" width="0.127" layer="21"/>
 <wire x1="-8.8" y1="4.06" x2="7.53" y2="4.06" width="0.127" layer="21"/>
 <pad name="1" x="-3.81" y="2.54" drill="1" shape="square"/>
-<pad name="2" x="-1.27" y="2.54" drill="1"/>
-<pad name="3" x="1.27" y="2.54" drill="1"/>
-<pad name="4" x="-2.54" y="0" drill="1"/>
-<pad name="5" x="0" y="0" drill="1"/>
+<pad name="3" x="-1.27" y="2.54" drill="1"/>
+<pad name="5" x="1.27" y="2.54" drill="1"/>
+<pad name="2" x="-2.54" y="0" drill="1"/>
+<pad name="4" x="0" y="0" drill="1"/>
 <pad name="6" x="2.54" y="0" drill="1"/>
 <pad name="SH1" x="-7.5" y="-9.4" drill="1.65"/>
 <pad name="SH2" x="6.22" y="-9.4" drill="1.65"/>
@@ -17989,47 +17989,33 @@ HOLES</text>
 <nets>
 <net name="FC12V" class="0">
 <segment>
-<pinref part="FC_PWR" gate="G$1" pin="4"/>
-<wire x1="50.8" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="58.42" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
-<label x="27.94" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="FC_PWR" gate="G$1" pin="3"/>
-<wire x1="50.8" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="63.5" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
-<label x="33.02" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="27.94" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
 <label x="20.32" y="27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="FC_PWR" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="68.58" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="38.1" y="83.82" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="FC_PWR" gate="G$1" pin="5"/>
+<wire x1="50.8" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
+<label x="22.86" y="83.82" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="AUX12V" class="0">
-<segment>
-<pinref part="AUX_PWR" gate="G$1" pin="4"/>
-<wire x1="109.22" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="58.42" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
-<label x="86.36" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="109.22" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="AUX_PWR" gate="G$1" pin="3"/>
-<wire x1="91.44" y1="63.5" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
-<label x="91.44" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="R31" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="27.94" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
 <label x="35.56" y="27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
-</net>
-<net name="AUX5V" class="0">
 <segment>
+<pinref part="AUX_PWR" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="68.58" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="AUX_PWR" gate="G$1" pin="2"/>
 <label x="96.52" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
@@ -18038,10 +18024,24 @@ HOLES</text>
 <wire x1="81.28" y1="53.34" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
 <label x="81.28" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
+</net>
+<net name="AUX5V" class="0">
 <segment>
 <pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="27.94" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
 <label x="27.94" y="27.94" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="AUX_PWR" gate="G$1" pin="4"/>
+<wire x1="109.22" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="58.42" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<label x="86.36" y="83.82" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="AUX_PWR" gate="G$1" pin="3"/>
+<wire x1="109.22" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="63.5" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
+<label x="91.44" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -18108,21 +18108,21 @@ HOLES</text>
 </net>
 <net name="FC5V" class="0">
 <segment>
-<pinref part="FC_PWR" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="68.58" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
-<label x="38.1" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="FC_PWR" gate="G$1" pin="5"/>
-<wire x1="50.8" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="53.34" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
-<label x="22.86" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="27.94" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
 <label x="12.7" y="27.94" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="FC_PWR" gate="G$1" pin="3"/>
+<wire x1="50.8" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="63.5" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
+<label x="33.02" y="83.82" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="FC_PWR" gate="G$1" pin="4"/>
+<wire x1="50.8" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="58.42" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
+<label x="27.94" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$21" class="0">
